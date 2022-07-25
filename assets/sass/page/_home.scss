@@ -1,0 +1,1421 @@
+.hero {
+	@include bp($point_2) {
+		order: 0;
+	}
+}
+.section_in {
+}
+.hero_main--w {
+	margin-bottom: 14.1rem;
+	@include bp($point_2) {
+		position: relative;
+		margin-bottom: 4.9rem;
+	}
+}
+
+
+.hero_main {
+	@include flex-space;
+	align-items: flex-start;
+	// padding-bottom: 6.3rem;
+	margin-bottom: 5.6rem;
+	@include bp($point_2) {
+		flex-direction: column;
+		// padding-bottom: 7.6rem;
+		margin-bottom: 7.9rem;
+	} 
+	h1 {
+    display: inline;
+    box-decoration-break: clone;
+    padding: 0.5rem 1rem;
+    filter: url('#goo');
+		background-color: $green;
+		line-height: 6.8rem;
+		font-size: 4.8rem;
+		color: $white;
+	}
+}
+.hero_content {
+	max-width: 71.3rem;
+	padding-top: 11.3rem;
+	margin-right: 14.6rem;
+	@include bp($point_2) {
+		order: 1;
+		padding-top: 0;
+		margin-right: 0;
+	}
+}
+.hero_title--w {
+	margin-bottom: 4.6rem;
+	@include bp($point_2) {
+		h1 {
+			font-size: 2.3rem;
+			line-height: 3rem;
+		}
+	}
+}
+.hero_service {
+	@include flex-start;
+	margin-bottom: 3rem;
+	@include bp($point_2) {
+		margin-bottom: 0;
+	}
+}
+.hero_serviceItem {
+	max-width: 30.3rem;
+	margin-right: 11.6rem;
+	@include bp($point_2) {
+		margin-right: 1.9rem;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.hero_serviceImg {
+	width: 6rem;
+	margin-bottom: 3.5rem;
+	@include bp($point_2) {
+		width: 4.9rem;
+		margin-bottom: 2.2rem;
+	}
+}
+.hero_serviceTxt {
+	p {
+		font-size: 1.4rem;
+		font-family: $font_2;
+		@include bp($point_2) {
+			font-size: 0.9rem;
+		}
+	}
+}
+.hero_btn {
+	@include standart;
+	@include bp($point_2) {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+.btn {
+}
+.hero_img {
+	width: 80.2rem;
+	@include bp($point_2) {
+		width: 100%;
+		order: 0;
+		margin-top: -3rem;
+		margin-bottom: 1rem;
+	}
+}
+.hero_all--nav {
+	@include flex-start;
+	@include bp($point_2) {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		justify-content: flex-end;
+	}
+}
+.hero_pug {
+	display: inline-flex;
+	width: auto!important;
+	margin-right: 3.5rem;
+	@include bp($point_2) {
+		display: none;
+	}
+	.swiper-pagination-bullet {
+		width: 1.3rem!important;
+		height: 1.3rem!important;
+		border: .1rem solid $green;
+		opacity: 1;
+		background-color: $white;
+		margin-right: 0.8rem!important;
+		margin-left: 0!important;
+		&:last-child {
+			margin-right: 0!important;
+		}
+		&-active {
+			background-color: $green;
+		}
+	}
+}
+.hero_line {
+	flex-grow: 1;
+	border-bottom: .1rem solid $green;
+	width: 100%;
+	margin-right: 2.8rem;
+	@include bp($point_2) {
+		z-index: 11;
+		margin-right: 0.9rem;
+		width: 11.4rem;
+		flex-grow: inherit;
+	}
+}
+.hero_nav {
+	@include flex-start;
+	.swiper-button-disabled {
+		background-color: transparent;
+		color: $green;
+		pointer-events: none;
+	}
+}
+.hero_nav--btn {
+	@include flex-center;
+	border-radius: 5rem;
+	background-color: $green;
+	border: .1rem solid $green;
+	width: 5.4rem;
+	height: 5.4rem;
+	color: $white;
+	margin-right: 1.9rem;
+	cursor: pointer;
+	transition: all .3s ease;
+	@include bp($point_2) {
+		width: 3.6rem;
+		height: 3.6rem;
+		z-index: 10;
+		margin-right: 0.4rem;
+	}
+	svg {
+		@include bp($point_2) {
+			width: 1.4rem;
+		}
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.hero_left {
+}
+.icon {
+}
+.icon-left {
+}
+.hero_right {
+}
+.icon-right {
+}
+.hero_news {
+	@include bp($point_2) {
+		order: 1;
+	}
+}
+.hero_newsMain {
+	margin-bottom: 20.7rem;
+	@include bp($point_2) {
+		margin-bottom: 5rem;
+	}
+}
+.hero_news--title {
+	h2 {
+		font-size: 3.8rem;
+		max-width: 95rem;
+		font-family: $font_3;
+		@include bp($point_2) {
+			font-size: 1.8rem;
+			line-height: 2.4rem;
+		}
+
+	}
+	margin-bottom: 9.5rem;
+	@include bp($point_2) {
+		margin-bottom: 4.5rem;
+	}
+}
+.hero_news--list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+	grid-gap: 6rem;
+	@include bp($point_2) {
+		grid-gap: 1.5rem;
+	}
+	li {
+		article {
+			@include bp($point_2) {
+				@include flex-start;
+				align-items: flex-start;
+				padding-bottom: 1rem;
+				border-bottom: .1rem solid rgba(105, 134, 222, 0.10);
+				
+			}
+		}
+		p {
+			font-size: 1.4rem;
+			margin-bottom: 3.5rem;
+			line-height: 2.3rem;
+			@include bp($point_2) {
+				font-size: 0.9rem;
+				line-height: 1.4rem;
+				margin-right: 2.1rem;
+				margin-bottom: 0;
+			}
+		}
+		span {
+			display: inline-flex;
+			color: #6987DF;
+			background-color: #E0E2F3;
+			box-shadow: 0 0 8rem rgba(0, 0, 0, 0.06);
+			border-radius: .4rem;
+			font-size: 1.4rem;
+			font-family: $font_3;
+			padding: .4rem 1.1rem;
+			@include bp($point_2) {
+				font-size: 1rem;
+				height: 2.7rem;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
+}
+.hero_newsItem {
+}
+.home_static {
+	position: relative;
+	@include bp($point_2) {
+		order: 3;
+	}
+}
+.home_staticMain {
+	@include flex-start;
+	align-items: flex-start;
+	margin-bottom: 21.1rem;
+	@include bp($point_2) {
+		flex-direction: column;
+		padding-top: 2.8rem;
+		position: relative;
+		margin-bottom: 5.2rem;
+	}
+	h3 {
+		margin-bottom: 4.9rem;
+		@include bp($point_2) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			max-width: 16rem;
+		}
+	}
+}
+.home_static--img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 80.2rem;
+	@include bp($point_2) {
+		width: 100%;
+		position: static;
+		margin-bottom: 6.3rem;
+	}
+}
+.home_static--indi {
+	margin-left: 83rem;
+	width: 100%;
+	@include bp($point_2) {
+		margin-left: 0;
+	}
+}
+.static_indi--w {
+}
+.static_indiHead--list {
+	@include flex-start;
+	@include bp($point_2) {
+		margin-bottom: 2.6rem;
+	}
+	li {
+		cursor: pointer;
+		padding: 3rem;
+		font-size: 1.4rem;
+		font-family: $font_3;
+		border-top-left-radius: 1.8rem;
+		border-top-right-radius: 1.8rem;
+		background-color: #D0045D;
+		color: $white;
+		margin-right: 0.2rem;
+		transition: all .3s ease;
+		&.active_tab {
+			background-color: $white;
+			color: $vio;
+		}
+		@include bp($point_2) {
+			font-size: 0.8rem;
+			padding: 1.6rem 1.5rem;
+			border-radius: 0.6rem;
+			margin-right: 0;
+			box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.12);
+			z-index: 3;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		&:nth-child(2)  {
+			color: $white;
+			background-color: $vio;
+			&.active_tab {
+				background-color: $white;
+				color: $vio;
+			}
+			@include bp($point_2) {
+				z-index: 2;
+				margin-left: -1rem;
+				padding: 1.6rem 2.4rem;
+			}
+		}
+		&:nth-child(3)  {
+			color: $white;
+			background-color: $green;
+			&.active_tab {
+				background-color: $white;
+				color: $green;
+			}
+			@include bp($point_2) {
+				z-index: 1;
+				margin-left: -1rem;
+				padding: 1.6rem 2.4rem;
+			}
+		}
+	}
+}
+.active_mod {
+}
+.static_indiBody--list {
+	background-color: $white;
+	border-radius: 3.2rem;
+	border-top-left-radius: 0;
+	@include bp($point_2) {
+		background-color: transparent;
+		border-radius: 0;
+		margin-bottom: 2.6rem;
+	}
+}
+.static_indiBody--tab {
+	padding: 4.1rem 3.8rem 8.1rem 5.9rem;
+	display: none;
+	&.active_tab {
+		display: block;
+	}
+	@include bp($point_2) {
+		padding: 0;
+	}
+}
+.static_label--list {
+	@include flex-start;
+	margin-left: 4.5rem;
+	margin-bottom: 3.5rem;
+	@include bp($point_2) {
+		margin-left: 0;
+		// justify-content: space-between;
+	}
+	li {
+		font-size: 0.8rem;
+		font-family: $font_3;
+		color: $vio;
+		&:nth-child(1) {
+			margin-right: 5.2rem;
+			@include bp($point_2) {
+				display: none;
+			}
+		}
+		&:nth-child(2) {
+			margin-right: 5rem;
+			@include bp($point_2) {
+				margin-right: 1.8rem;
+			}
+		}
+		&:nth-child(3) {
+			margin-right: 6.6rem;
+			@include bp($point_2) {
+				margin-right: 4rem;
+			}
+		}
+		&:nth-child(4) {
+			margin-right: 2.8rem;
+			@include bp($point_2) {
+				margin-right: 1.7rem;
+			}
+		}
+		&:nth-child(5) {
+			margin-right: 1.6rem;
+			@include bp($point_2) {
+				margin-right: 1.6rem;
+			}
+		}
+		&:nth-child(6) {
+			margin-right: 1.4rem;
+			@include bp($point_2) {
+
+			}
+		}
+		@include bp($point_2) {
+			font-size: 0.5rem;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+.static_indiTable--w {
+	max-height: 40.6rem;
+	overflow: auto;
+	@include bp($point_2) {
+		overflow: hidden;
+		max-height: 51.6rem;
+	}
+}
+.static_indi--row {
+	@include flex-start;
+	margin-bottom: 3.1rem;
+	font-size: 1.4rem;
+	position: relative;
+	@include bp($point_2) {
+		padding-top: 4.7rem;
+		margin-bottom: 1.9rem;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	li {
+		@include bp($point_2) {
+			font-size: 0.8rem;
+		}
+		&:first-child {
+			margin-right: 2.6rem;
+			width: 2.1rem;
+			min-width: 2.1rem;
+			@include flex-center;
+			border-radius: 5rem;
+			@include bp($point_2) {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+		&:nth-child(2) {
+			text-transform: uppercase;
+			font-family: $font_3;
+			font-size: 1.4rem;
+			margin-right: 3.5rem;
+			@include bp($point_2) {
+				position: absolute;
+				top: 0;
+				left: 3.4rem;
+				font-size: 1.5rem;
+			}
+		}
+		&:nth-child(3) {
+			margin-right: 5.8rem;
+			@include bp($point_2) {
+				margin-right: 2.6rem;
+			}
+
+		}
+		&:nth-child(4) {
+			margin-right: 3.6rem;
+			@include bp($point_2) {
+				margin-right: 2.6rem;
+			}
+		}
+		&:nth-child(5) {
+			margin-right: 3.3rem;
+			@include bp($point_2) {
+				margin-right: 2.6rem;
+			}
+		}
+		&:nth-child(6) {
+			margin-right: 3.4rem;
+			@include bp($point_2) {
+				margin-right: 2.7rem;
+			}
+		}
+		&:nth-child(7) {
+			margin-right: 3.8rem;
+			@include bp($point_2) {
+				margin-right: 2.9rem;
+			}
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+
+		@include bp($point_2) {
+			// margin-right: 3.2rem!important;
+		}
+	}
+}
+.percent_red {
+	font-family: $font_3;
+	color: #D0045D;
+}
+.number_red {
+	font-family: $font_3;
+	color: $green;
+}
+.percent_green {
+}
+.number_green {
+}
+.service_sliders {
+	@include bp($point_2) {
+		order: 4;
+	}
+}
+.service_slider {
+	padding-bottom: 8rem!important;
+	margin-bottom: 8rem!important;
+	@include bp($point_2) {
+		margin-bottom: 2.75rem!important;
+		padding-bottom: 2.75rem!important;
+	}
+}
+.service_slider--main {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+
+
+.img_first {
+	width: 15.8rem;
+	@include bp($point_2) {
+		width: 8.5rem!important;
+		right: 1rem!important;
+	}
+}
+.img_two {
+	width: 12.1rem;
+}
+.img_free {
+	width: 12rem;
+}
+.service_slide {
+	position: relative;
+	box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.06);
+	border-radius: 3.2rem;
+}
+.service_slide--img {
+	position: absolute;
+	right: 2.3rem;
+	top: 2.3rem;
+	@include bp($point_2) {
+		width: 5.7rem;
+	}
+}
+.service_slide--content {
+	padding: 12.6rem 16.4rem 4.8rem 5.3rem;
+	@include bp($point_2) {
+		padding: 4.9rem 7.7rem 1.8rem 2.9rem;
+	}
+	p {
+		font-size: 2.6rem;
+		font-family: $font_3;
+		max-width: 20.2rem;
+		margin-bottom: 2.3rem;
+		@include bp($point_2) {
+			font-size: 1.6rem;
+			margin-bottom: 0.7rem;
+		}
+	}
+	span {
+		display: flex;
+		font-size: 1.3rem;
+		color: #3C4A6D;
+		font-family: $font_2;
+		opacity: .5;
+		max-width: 23.3rem;
+		@include bp($point_2) {
+			font-size: 0.8rem;
+		}
+	}
+}
+.slide_vio {
+	background: linear-gradient(180deg, #5E93FE 0%, #8E6CFD 100%);
+	color: $white;
+	span {
+		color: $white;
+	}
+}
+.slide_white {
+	background-color: $white;
+}
+.slide_green {
+	background: linear-gradient(180deg, #41D79F 0%, #29C4A5 100%);
+	color: $white;
+	span {
+		color: $white;
+	}
+}
+.consult {
+	@include bp($point_2) {
+		order: 5;
+	}
+}
+.consult_main--w {
+	@include bp($point_2) {
+		padding-bottom: 7.2rem;
+		position: relative;
+		margin-bottom: 3.9rem;
+	}
+}
+.consult_main--head {
+	@include flex-space;
+	margin-bottom: 8.1rem;
+	@include bp($point_2) {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 2.9rem;
+	}
+	h4 {
+		max-width: 58.4rem;
+	}
+	a {
+		@include flex-center;
+		background-color: $white;
+		color: $vio;
+		font-size: 1.4rem;
+		font-family: $font_3;
+		height: 6.5rem;
+		min-width: 21.1rem;
+		border-radius: 1.8rem;
+		@include bp($point_2) {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100%;
+			height: 3.7rem;
+			font-size: 1.2rem;
+			border-radius: 0.6rem;
+		}
+		&:hover {
+			p {
+				border-bottom: .1rem solid transparent;
+			}
+		}
+		p {
+			border-bottom: .1rem solid $vio;
+			line-height: 1.5rem;
+			transition: all .3s ease;
+		}
+	}
+}
+.consult_list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(19.7rem, 1fr));
+	grid-gap: 8.3rem;
+	margin-bottom: 15.6rem;
+	@include bp($point_2) {
+		grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+		grid-gap: 2.1rem 3.4rem;
+		margin-bottom: 0;
+	}
+}
+.consult_item {
+}
+.consult_item--img {
+	width: 12rem;
+	height: 12rem;
+	margin-bottom: 2.9rem;
+	border-radius: 3.2rem;
+	box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.06);
+	overflow: hidden;
+	@include bp($point_2) {
+		width: 6.6rem;
+		height: 6.6rem;
+		margin-bottom: 1.4rem;
+		border-radius: 0.6rem;
+	}
+}
+.consult_item--content {
+	p {
+		font-size: 1.4rem;
+		margin-bottom: 3rem;
+		@include bp($point_2) {
+			font-size: 1rem;
+			margin-bottom: 1rem;
+		}
+	}
+	a {
+		color: $vio;
+		text-transform: uppercase;
+		font-size: 1.4rem;
+		font-family: $font_3;
+		@include bp($point_2) {
+			font-size: 1rem;
+		}
+	}
+}
+.event {
+	position: relative;
+	z-index: 2;
+	@include bp($point_2) {
+		order: 2;
+	}
+	&:before {
+		position: absolute;
+		bottom: -10rem;
+		right: -5rem;
+		background-image: url('../../i/global/cal.png');
+		background-size: contain;
+		width: 107.5rem;
+		height: 70.2rem;
+		content: '';
+		@include z-index(el);
+		@include bp($point_2) {
+			display: none;
+		}
+	}
+}
+.event_main--w {
+	h5 {
+		max-width: 86.6rem;
+		@include bp($point_2) {
+			margin-bottom: 3rem;
+		}
+	}
+}
+.event_main {
+	@include flex-space;
+	align-items: flex-start;
+	padding-bottom: 20rem;
+	@include bp($point_2) {
+		flex-direction: column;
+		position: relative;
+		padding-bottom: 6rem;
+		margin-bottom: 4.4rem;
+	}
+}
+.event_grid--w {
+	margin-right: 5.5rem;
+	width: 100%;
+	max-width: 108.6rem;
+	position: relative;
+	@include bp($point_2) {
+		margin-right: 0;
+		// padding: 0 .6rem 0 1rem;
+		position: static;
+		margin-bottom: 4.5rem;
+	}
+}
+.event_grid {
+	@include flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 14.5rem;
+	@include bp($point_2) {
+		margin-top: 0;
+		flex-direction: column;
+	}
+	li {
+		max-width: 51.2rem;
+		background-color: $white;
+		margin: 0 6.2rem 5.3rem 0;
+		padding: 4.6rem 10.2rem 3.5rem 11.1rem;
+		position: relative;
+		border-radius: 3.2rem;
+		box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.06);
+		z-index: 2;
+		@include bp($point_2) {
+			padding: 1.8rem 9.1rem 1.2rem 7rem;
+			margin: 0;
+			margin-bottom: 1.5rem;
+			border-radius: 1.2rem;
+		}
+		&:nth-child(3) {
+			margin-bottom: 0;
+		}
+		&:nth-child(4) {
+			margin-bottom: 0;
+		}
+		&:last-child {
+			@include bp($point_2) {
+				margin-bottom: 0;
+			}
+		}
+		&:hover {
+			&>p {
+				color: $white!important;
+			}
+			&:before {
+				opacity: 1;
+			}
+			color: $white;
+			a {
+				p {
+					color: $black;
+					border-bottom: none;
+				}
+			}
+		}
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			content: '';
+			background: linear-gradient(180deg, #5E93FE 0%, #8E6CFD 100%);
+			border-radius: 3.2rem;
+			@include z-index(el);
+			opacity: 0;
+			transition: all .3s ease;
+			@include bp($point_2) {
+				border-radius: 1.2rem;
+			}
+		}
+
+		span {
+			display: inline-flex;
+			background-color: #6CE2A8;
+			color: $vio;
+			font-size: 1.4rem;
+			font-family: $font_2;
+			height: 2.8rem;
+			min-width: 9.8rem;
+			align-items: center;
+			justify-content: center;
+			border-radius: 0.4rem;
+			box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.06);
+			margin-bottom: 2.1rem;
+			@include bp($point_2) {
+				font-size: 1rem;
+				height: 2.1rem;
+				min-width: 6.6rem;
+				margin-bottom: 2rem;
+			}
+		}
+		p {
+			font-size: 2.2rem;
+			font-family: $font_3;
+			margin-bottom: 6.4rem;
+			transition: all .3s ease;
+			@include bp($point_2) {
+				font-size: 1.2rem;
+				line-height: 1.9rem;
+				margin-bottom: 2.1rem;
+			}
+		}
+		a {
+			@include flex-center;
+			display: inline-flex;
+			height: 3.8rem;
+			min-width: 11.5rem;
+			border-radius: 1.2rem;
+			background-color: $white;
+			@include bp($point_2) {
+				justify-content: flex-start;
+			}
+			p {
+				border-bottom: .1rem solid $vio;
+				font-size: 1.4rem;
+				font-family: $font_3;
+				color: $vio;
+				line-height: 1.5rem;
+				margin-bottom: 0;
+				transition: all .3s ease;
+				@include bp($point_2) {
+					font-size: 1rem;
+				}
+			}
+		}
+		&:nth-child(2n) {
+			margin-right: 0;
+			margin-top: -27rem;
+			@include bp($point_2) {
+				margin-top: 0;
+			}
+		}
+	}
+}
+.event_item {
+	@include flex-start;
+	align-items: flex-start;
+}
+.event_item--img {
+	width: 10.6rem;
+	position: absolute;
+	top: 4.6rem;
+	left: -3.1rem;
+	border-radius: 1.6rem;
+	overflow: hidden;
+	@include bp($point_2) {
+		width: 5rem;
+		left: -1rem;
+		top: 2.1rem;
+		border-radius: 1.2rem;
+	}
+	img {
+		object-fit: cover;
+	}
+}
+.event_item--content {
+}
+.event_btn--more {
+	position: absolute;
+	bottom: 0;
+	right: 30.7rem;
+	@include bp($point_2) {
+		right: auto;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+	}
+	a {
+		min-height: 6.5rem;
+		min-width: 21.1rem;
+		@include flex-center;
+		color: $vio;
+		box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.06);
+		border-radius: 1.8rem;
+		background-color: $white;
+		font-size: 1.4rem;
+		font-family: $font_3;
+		text-decoration: underline;
+		transition: all .3s ease;
+		@include bp($point_2) {
+			min-height: 3.7rem;
+			font-size: 1.2rem;
+			border-radius: 0.6rem;
+			width: 100%;
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+.event_calendar--w {
+	max-width: 51.2rem;
+	@include bp($point_2) {
+		width: 100%;
+	}
+	p {
+		color: $green;
+		font-size: 3.8rem;
+		font-family: $font_3;
+		max-width: 30.4rem;
+		margin-bottom: 5.4rem;
+		margin-top: -8rem;
+		@include bp($point_2) {
+			margin-top: 0;
+			font-size: 1.8rem;
+			line-height: 2.3rem;
+			max-width: 14rem;
+			margin-bottom: 1.6rem;
+		}
+	}
+}
+.event_calendar {
+	width: 100%;
+	background: linear-gradient(180deg, #41D79F 0%, #29C4A5 100%);
+	padding: 5.3rem 5.5rem;
+	box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.06);
+	border-radius: 3.2rem;
+	@include bp($point_2) {
+		padding: 3.1rem 3.5rem;
+		border-radius: 1.2rem;
+	}
+	.jsCalendar table {
+		width: 100%;
+		border-radius: 3.2rem;
+		color: $white;
+		position: relative;
+		width: 40.3rem;
+		background-color: transparent;
+		box-shadow: none;
+		@include bp($point_2) {
+			width: 100%;
+		}
+	}
+	.jsCalendar-title-row {
+		position: relative;
+	}
+	.jsCalendar thead {
+		@include flex-center;
+		flex-direction: column;
+	}
+	.jsCalendar-title-row {
+		width: 100%!important;
+		display: flex!important;
+	}
+	.jsCalendar thead .jsCalendar-title-name {
+		width: 100%;
+		padding: 0!important;
+		font-size: 3.8rem;
+		font-family: $font_3;
+		@include bp($point_2) {
+			font-size: 1.6rem;
+			line-height: 1.6rem;
+		}
+	}
+	.jsCalendar thead .jsCalendar-title {
+		width: 100%;
+		height: 100%;
+	}
+	.jsCalendar thead .jsCalendar-nav-left, .jsCalendar thead .jsCalendar-nav-right {
+		margin: 0!important;
+		width: 2.5rem;
+		height: 2.5rem;
+		@include bp($point_2) {
+			display: none;
+		}
+	}
+	.jsCalendar thead .jsCalendar-nav-left:after {
+		content: '';
+		background-image: url('../../i/global/arrLeft.svg');
+		width: 2.5rem;
+		height: 2.5rem;
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+
+	.jsCalendar thead .jsCalendar-nav-right:after {
+		content: '';
+		background-image: url('../../i/global/arrRight.svg');
+		width: 2.5rem;
+		height: 2.5rem;
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+	}
+	.jsCalendar thead .jsCalendar-nav-left:hover, .jsCalendar thead .jsCalendar-nav-right:hover {
+		background-color: transparent;
+	}
+}
+
+.jsCalendar thead, .jsCalendar tbody, .event_calendar .jsCalendar table {
+	margin: 0!important;
+}
+.jsCalendar thead .jsCalendar-title-left {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	float: none!important;
+	width: 100%;
+}
+
+.jsCalendar-week-days {
+	@include flex-space;
+	width: 100%;
+	th {
+		position: relative;
+		margin: 0!important;
+		width: 4.8rem;
+		height: 3.8rem;
+		@include flex-center;
+		&:nth-child(1) {
+			font-size: 0!important;
+			@include bp($point_2) {
+				height: 2.5rem!important;
+				margin-bottom: 0.5rem!important;
+			}
+			&:after {
+				content: 'ВС';
+				font-size: 1.2rem;
+				font-family: $font_3;
+				text-transform: uppercase;
+				@include bp($point_2) {
+					font-size: 0.7rem;
+				}
+			}
+		}
+		&:nth-child(2) {
+			font-size: 0!important;
+			@include bp($point_2) {
+				height: 2.5rem!important;
+				margin-bottom: 0.5rem!important;
+			}
+			&:after {
+				content: 'ПН';
+				font-size: 1.2rem;
+				font-family: $font_3;
+				text-transform: uppercase;
+				@include bp($point_2) {
+					font-size: 0.7rem;
+				}
+			}
+		}
+		&:nth-child(3) {
+			font-size: 0!important;
+			@include bp($point_2) {
+				height: 2.5rem!important;
+				margin-bottom: 0.5rem!important;
+			}
+			&:after {
+				content: 'ВТ';
+				font-size: 1.2rem;
+				font-family: $font_3;
+				text-transform: uppercase;
+				@include bp($point_2) {
+					font-size: 0.7rem;
+				}
+			}
+		}
+		&:nth-child(4) {
+			font-size: 0!important;
+			@include bp($point_2) {
+				height: 2.5rem!important;
+				margin-bottom: 0.5rem!important;
+			}
+			&:after {
+				content: 'СР';
+				font-size: 1.2rem;
+				font-family: $font_3;
+				text-transform: uppercase;
+				@include bp($point_2) {
+					font-size: 0.7rem;
+				}
+			}
+		}
+		&:nth-child(5) {
+			font-size: 0!important;
+			@include bp($point_2) {
+				height: 2.5rem!important;
+				margin-bottom: 0.5rem!important;
+			}
+			&:after {
+				content: 'ЧТ';
+				font-size: 1.2rem;
+				font-family: $font_3;
+				text-transform: uppercase;
+				@include bp($point_2) {
+					font-size: 0.7rem;
+				}
+			}
+		}
+		&:nth-child(6) {
+			font-size: 0!important;
+			@include bp($point_2) {
+				height: 2.5rem!important;
+				margin-bottom: 0.5rem!important;
+			}
+			&:after {
+				content: 'ПТ';
+				font-size: 1.2rem;
+				font-family: $font_3;
+				text-transform: uppercase;
+				@include bp($point_2) {
+					font-size: 0.7rem;
+				}
+			}
+		}
+		&:nth-child(7) {
+			font-size: 0!important;
+			@include bp($point_2) {
+				height: 2.5rem!important;
+				margin-bottom: 0.5rem!important;
+			}
+			&:after {
+				content: 'СБ';
+				font-size: 1.2rem;
+				font-family: $font_3;
+				text-transform: uppercase;
+				@include bp($point_2) {
+					font-size: 0.7rem;
+				}
+			}
+		}
+	}
+}
+.jsCalendar tbody {
+	&>tr {
+		@include flex-space;
+		margin-bottom: 1.3rem;
+		@include bp($point_2) {
+			margin-bottom: .7rem;
+		}
+		&>td {
+			margin: 0!important;
+			background-color: #6CE2A8;
+			border-radius: 0.6rem;
+			cursor: pointer;
+			@include bp($point_2) {
+				font-size: 1.4rem;
+				width: 3rem;
+				height: 3rem;
+				@include flex-center;
+			}
+			&:hover {
+				background-color: transparent;
+			}
+		}
+	}
+}
+.jsCalendar-next, .jsCalendar-previous {
+	border: .1rem solid $white!important;
+	background-color: transparent!important;
+	color: $white!important;
+	opacity: .3;
+}
+.jsCalendar-current {
+	border-radius: 0.6rem!important;
+	background-color: $white!important;
+	color: #6987DF!important;
+	font-size: 1.4rem;
+	font-family: $font_3;
+	text-decoration: underline;
+}
+.jsCalendar-title-right {
+	display: none;
+}
+.faq {
+	@include bp($point_2) {
+		order: 6;
+	}
+}
+.faq_main--w {
+	margin-bottom: 22rem;
+	@include bp($point_2) {
+		padding-bottom: 5.3rem;
+		position: relative;
+		margin-bottom: 6.9rem;
+	}
+}
+.btn_static--more  {
+	display: none;
+	@include bp($point_2) {
+		@include flex-center;
+	}
+	a {
+		@include flex-center;
+		font-size: 1.4rem;
+		font-family: $font_3;
+		color: $white;
+		border-radius: 1.8rem;
+		background-color: $vio;
+		transition: all .3s ease;
+		@include bp($point_2) {
+			min-height: 3.7rem;
+			font-size: 1.2rem;
+			border-radius: 0.6rem;
+			width: 100%;
+			min-width: 100%;
+			margin-right: 0!important;
+		}
+		&:hover {
+			text-decoration: none;
+		}
+		&:first-child {
+			margin-right: 2rem;
+		}
+	}
+}
+.faq_main--head {
+	@include flex-space;
+	// position: relative;
+	z-index: 3;
+	margin-bottom: 3.3rem;
+	h4 {
+		max-width: 23.6rem;
+	}
+}
+.faq_head--btnW {
+	@include flex-start;
+	@include bp($point_2) {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+	}
+	a {
+		@include flex-center;
+		font-size: 1.4rem;
+		font-family: $font_3;
+		color: $vio;
+		min-width: 21.1rem;
+		min-height: 6.5rem;
+		border-radius: 1.8rem;
+		background-color: $white;
+		text-decoration: underline;
+		transition: all .3s ease;
+		@include bp($point_2) {
+			min-height: 3.7rem;
+			font-size: 1.2rem;
+			border-radius: 0.6rem;
+			width: 100%;
+			min-width: 15.8rem;
+		}
+		&:hover {
+			text-decoration: none;
+		}
+		&:first-child {
+			margin-right: 2rem;
+		}
+	}
+}
+.faq_list {
+}
+.faq_item--w {
+	background-color: $white;
+	box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.06);
+	border-radius: 1.6rem;
+	margin-bottom: 1.4rem;
+
+	&.active_mod {
+		.faq_item--head {
+			svg {
+				transform: scaleY(-1) translateY(-50%);
+				top: 23%;
+				color: $green;
+				@include bp($point_2) {
+					top: 21%;
+				}
+			}
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.faq_item--head {
+	padding: 3.4rem 5.4rem 3.4rem 4.2rem;
+	font-size: 1.8rem;
+	font-family: $font_2;
+	color: $black;
+	cursor: pointer;
+	transition: all .3s ease;
+	@include flex-space;
+	position: relative;
+	@include bp($point_2) {
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+		padding: 1.9rem 6.3rem 2.2rem .8rem;
+	}
+	svg {
+		position: absolute;
+		top: 50%;
+		right: 3.3rem;
+		transform: translateY(-50%);
+		width: 2.4rem;
+		color: $vio;
+		transition: all .3s ease;
+		@include flex-center;
+	}
+	&:hover {
+		color: $vio;
+	}
+}
+.faq_item--body {
+	margin-top: -1rem;
+	padding: 0 5.4rem 4.7rem 4.2rem;
+	font-size: 1.4rem;
+	font-family: $font_111;
+	line-height: 2.4rem;
+	display: none;
+	@include bp($point_2) {
+		font-size: 0.9rem;
+		padding: 0 4.2rem 1.9rem .8rem;
+		line-height: 1.4rem;
+	}
+}

@@ -1,0 +1,203 @@
+
+// Сброс стилей input
+@mixin app {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	background-color: transparent;
+	font-family: $font_1;
+	font-size: $font_size_base;
+}
+
+// Input end
+
+
+// Flex styles
+
+@mixin flex-center {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+@mixin flex-col {
+	flex-direction: column;
+}
+
+@mixin flex-start {
+	justify-content: flex-start;
+	display: flex;
+	align-items: center;
+}
+
+@mixin flex-space {
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+}
+
+@mixin flex-end {
+	justify-content: flex-end;
+	display: flex;
+	align-items: center;
+}
+
+// End flex styles
+
+// Style default link
+
+
+@mixin link {
+	position: relative;
+	&:before {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		content: '';
+		border-bottom: .2rem solid $black;
+		transition: all .3s ease;
+		pointer-events: none;
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+		}
+	}
+	&.active {
+		&:before {
+			width: 100%;
+		}
+	}
+}
+
+// End style link
+
+// Btn
+
+@mixin standart {
+	background-color: $vio;
+	border-radius: 1.8rem;
+	display: inline-flex;
+	@include bp($point_2) {
+		border-radius: 0.6rem;
+	}
+	a {
+		font-size: 2rem;
+		font-family: $font_3;
+		color: $white;
+		height: 5.9rem;
+		min-width: 20.3rem;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		@include bp($point_2) {
+			font-size: 1.2rem;
+			min-width: 12rem;
+			height: 3.7rem;
+			padding: 0;
+		}
+	}
+}
+
+
+
+// Input global 
+
+@mixin input {
+	position: relative;
+	label {
+		font-size: 1.4rem;
+		@include flex-start;
+		margin-bottom: 1.9rem;
+		font-family: $font_2;
+	}
+	input {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		border: none;
+		background-color: transparent;
+		font-family: $font_1;
+		font-size: $font_size_base;
+		background-color: #DCEAF4;
+		opacity: 0.3;
+		border-radius: .8rem;
+		height: 5.4rem;
+		@include flex-start;
+		padding: 1rem 2rem;
+		font-size: 1.6rem;
+		transition: all .3s ease;
+		width: 100%;
+		&:focus {
+			opacity: 1;
+		}
+	}
+}
+
+
+
+@mixin textarea {
+	position: relative;
+	label {
+		font-size: 1.4rem;
+		@include flex-start;
+		margin-bottom: 1.9rem;
+		font-family: $font_2;
+	}
+	textarea {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		border: none;
+		background-color: transparent;
+		font-family: $font_1;
+		font-size: $font_size_base;
+		background-color: #DCEAF4;
+		opacity: 0.3;
+		border-radius: .8rem;
+		@include flex-start;
+		padding: 1rem 2rem;
+		font-size: 1.6rem;
+		transition: all .3s ease;
+		width: 100%;
+		&:focus {
+			opacity: 1;
+		}
+	}
+}
+
+
+// Submit
+
+@mixin submit {
+	background: linear-gradient(180deg, #41D79F 0%, #29C4A5 100%);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	background-color: transparent;
+	font-family: $font_3;
+	font-size: 2rem;
+	border-radius: .8rem;
+	@include flex-start;
+	padding: 1.3rem 6rem;
+	transition: all .3s ease;
+	width: 100%;
+	color: $white;
+	line-height: 2.9rem;
+	&:hover {
+		background: linear-gradient(180deg, #29C4A5 0%, #41D79F 100%);
+	}
+}
+
+
+
+
+// Global Link
+
+@mixin glo_link {
+	transition: all .3s ease;
+	display: inline-flex;
+}

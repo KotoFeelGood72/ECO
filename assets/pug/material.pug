@@ -1,0 +1,149 @@
+extends _layout
+
+block vars
+	- array = {body_class:'mod_background', layout_mod:'', sub_keywords:'', title_inner:'MATERIAL PHOTO AND VIDEOS'}
+block content_block
+	+bread(['Главная'], 'Раздел')
+	section.material 
+		.section_in 
+			.material_main--w 
+				.material_main--head 
+					h1!='Фото и видео </br>материалы'
+					.normal_head--filter 
+						ul
+							li
+								p Текст
+								.normal_filter--inputTxt 
+									input(type="text", name="txt" placeholder="Например, текст")
+							li
+								p Рубрика
+								.normal_filter--select 
+									select(name="oiv" id="oiv")
+										option(value="Все рубрики") Все рубрики   
+										option(value="Все рубрики") Все рубрики 
+										option(value="Все рубрики") Все рубрики 
+										option(value="Все рубрики") Все рубрики 
+										option(value="Все рубрики") Все рубрики
+							li 
+								button 
+									.filter_icon 
+										img(src="i/global/searchs.svg", alt="")
+									p Найти
+				.material_main--grid 
+					ul.material_grid--top 
+						-for(i = 0; i < 3; i++)
+							li.material_item 
+								.material_item--img 
+									img(src="i/material/material_0.jpg", alt="")
+								.material_item--content 
+									.material_item--name 
+										p Фонд микрокредитования Краснодарского края
+									.material_item--date 
+										p 03.03.2020
+									.material_item--link 
+										a(href="#") Перейти в альбом 
+					ul.material_grid--body 
+						-for(i = 0; i < 2; i++)
+							li.material_item
+								.material_item--img
+									a(href="#")  
+										img(src="i/material/material_4.jpg", alt="")
+										.material_item--play 
+											img(src="i/material/play.svg", alt="")
+								.material_item--content 
+									a(href="#").material_item--name 
+										p Фонд микрокредитования Краснодарского края
+									.material_item--date 
+										p 03.03.2020
+					.materialBody_grid--w 
+						.material_big--item
+							.material_item--img
+								a(href="#")  
+									img(src="i/material/material_4.jpg", alt="")
+									.material_item--play 
+										img(src="i/material/play.svg", alt="")
+							.material_item--content 
+								a(href="#").material_item--name 
+									p Фонд микрокредитования Краснодарского края
+								.material_item--date 
+									p 03.03.2020
+						ul.material_mini--grid
+							li.material_item 
+								.material_item--img
+									a(href="#")  
+										img(src="i/material/material_4.jpg", alt="")
+										.material_item--play 
+											img(src="i/global/play_linear.svg", alt="")
+								.material_item--content 
+									a(href="#").material_item--name 
+										p Фонд микрокредитования Краснодарского края
+									.material_item--date 
+										p 03.03.2020
+									.material_item--link 
+										a(href="#") Перейти в альбом
+							li.material_item 
+								.material_item--img 
+									img(src="i/material/material_0.jpg", alt="")
+								.material_item--content 
+									.material_item--name 
+										p Фонд микрокредитования Краснодарского края
+									.material_item--date 
+										p 03.03.2020
+									.material_item--link 
+										a(href="#") Перейти в альбом
+							li.material_item 
+								.material_item--img
+									a(href="#")  
+										img(src="i/material/material_4.jpg", alt="")
+										.material_item--play 
+											img(src="i/global/play_linear.svg", alt="")
+								.material_item--content 
+									a(href="#").material_item--name 
+										p Фонд микрокредитования Краснодарского края
+									.material_item--date 
+										p 03.03.2020
+							li.material_item 
+								.material_item--img 
+									img(src="i/material/material_0.jpg", alt="")
+								.material_item--content 
+									.material_item--name 
+										p Фонд микрокредитования Краснодарского края
+									.material_item--date 
+										p 03.03.2020
+									.material_item--link 
+										a(href="#") Перейти в альбом
+					.materialBottom_grid--w 
+						ul.material_bottom--grid 
+							li.material_item 
+								.material_item--img 
+									img(src="i/material/material_0.jpg", alt="")
+								.material_item--content 
+									.material_item--name 
+										p Фонд микрокредитования Краснодарского края
+									.material_item--date 
+										p 03.03.2020
+									.material_item--link 
+										a(href="#") Перейти в альбом
+							li.material_item
+								.material_item--img
+									a(href="#")  
+										img(src="i/material/material_4.jpg", alt="")
+										.material_item--play 
+											img(src="i/material/play.svg", alt="")
+								.material_item--content 
+									a(href="#").material_item--name 
+										p Фонд микрокредитования Краснодарского края
+									.material_item--date 
+										p 03.03.2020
+					.normal_main--bottom 
+						.normal_btn--more 
+							a(href="#") Показать ещё
+						.normal_list-var 
+							p Выводить:
+							ul 
+								li 
+									a(href="#") 10
+								li 
+									a(href="#") 50
+								li 
+									a(href="#") 100

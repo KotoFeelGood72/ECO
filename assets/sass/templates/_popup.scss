@@ -1,0 +1,124 @@
+.burger {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	@include z-index(popup);
+	transition: all .3s ease;
+	opacity: 0;
+	visibility: hidden;
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		.burger_main {
+			transform: translateY(0);
+		}
+	}
+}
+.burger_main {
+	width: 100%;
+	height: 100%;
+	background-color: $green;
+	padding: 2.2rem 1.5rem 2.4rem 1.5rem;
+	transform: translateY(-100%);
+	transition: all .3s ease;
+
+
+
+
+	.footer_numbersMails {
+		@include flex-space;
+		li {
+			margin-bottom: 0;
+			a {
+				font-size: 1.2rem;
+				color: $white;
+			}
+		}
+	}
+}
+.burger_head {
+	@include flex-space;
+	margin-bottom: 2.7rem;
+}
+.burger_logo {
+}
+.burger_close {
+}
+.burger_body {
+	.header_visual {
+		@include flex-start;
+		margin-bottom: 2.5rem;
+		font-family: $font_3;
+		margin-right: 0;
+	}
+}
+.burger_visual {
+}
+.header_visual {
+}
+.header_visual--icons {
+}
+.burger_nav {
+	margin-bottom: 12.2rem;
+	ul {
+		li {
+			margin-bottom: 1rem;
+			a {
+				color: $white;
+				font-family: $font_2;
+				font-size: 1.2rem;
+				@include flex-start;
+			}
+		}
+	}
+}
+.burger_bottom {
+	.footer_info--search {
+		display: block;
+		width: 100%;
+		margin-bottom: 2.1rem;
+	}
+
+	.footer_numbersMails {
+		display: flex;
+	}
+}
+
+.header_search {
+}
+.burger_bottom--interface {
+	@include flex-space;
+	margin-bottom: 1.9rem;
+	ul {
+		@include flex-start;
+		li {
+			width: 2.6rem;
+			height: 2.6rem;
+			margin-right: 2.1rem;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				@include flex-center;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	.header_account {
+		display: block;
+		button {
+			background-color: $vio;
+			border-radius: 0.6rem;
+		}
+	}
+
+}
+.header_account {
+}
+.header_account--icons {
+}
+.footer_numbersMails {
+}

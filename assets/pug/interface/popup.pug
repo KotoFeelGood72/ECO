@@ -1,0 +1,42 @@
+// Burger menu 
+
+.burger 
+	.burger_main 
+		.burger_head 
+			.burger_logo 
+				img(src="i/global/burgers.svg", alt="Header logo website")
+			.burger_close 
+				img(src="i/global/closes.svg", alt="")
+		.burger_body 
+			.burger_visual 
+				button.header_visual
+					.header_visual--icons 
+						img(src="i/global/visual.svg", alt="") 
+					p Версия для слабовидящих
+			nav.burger_nav 
+				ul 
+					each item in ['Нормативные акты', 'Каталог финансовых организаций', 'Медиа', 'Календарь', 'Контакты', 'Помощь', 'Сервисы', 'Мониторинг показателей финансового рынка']
+						li 
+							a(href="#")=item
+		.burger_bottom 
+			.footer_info--search.header_search 
+				input(type="search", name="search" placeholder="Поиск по сайту")
+				button 
+					img(src="i/global/search.svg", alt="")
+			.burger_bottom--interface 
+				ul 
+					li 
+						a(href="#")
+								img(src="i/global/telegram.svg", alt="")
+					li 
+						a(href="#")
+								img(src="i/global/youtubse.svg", alt="")
+				.header_account 
+					button 
+						.header_account--icons 
+							img(src="i/global/user.svg", alt="")
+						p Кабинет
+			ul.footer_numbersMails 
+				each item in ['+7 (861) 214-51-91', 'economy@krasnodar.ru']
+					li 
+						a(href="#")=item

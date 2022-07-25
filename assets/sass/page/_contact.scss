@@ -1,0 +1,147 @@
+.contacts {
+}
+.section_in {
+}
+.contacts_main {
+	@include flex-space;
+	align-items: flex-start;
+	margin-bottom: 9.6rem;
+}
+.contacts_content {
+}
+.contacts_title {
+	max-width: 36.2rem;
+	margin-bottom: 6.2rem;
+}
+.contacts_list {
+	@include flex-start;
+	align-items: flex-start;
+	&li>p {
+		font-size: 2.6rem;
+		font-family: $font_3;
+	}
+}
+.contacts_items {
+	min-height: 38.6rem;
+	@include flex-start;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	&:first-child {
+		margin-right: 4.9rem;
+		max-width: 37.2rem;
+	}
+	&:nth-child(2) {
+		margin-right: 14.3rem;
+	}
+	&:last-child {
+		margin-right: -4rem;
+		a {
+			color: $vio;
+			text-decoration: underline;
+			font-size: 1.6rem;
+		}
+	}
+	&>p {
+		font-size: 2.6rem;
+		font-family: $font_3;
+		padding-bottom: 1.1rem;
+		position: relative;
+		margin-bottom: 2.5rem;
+		line-height: 5rem;
+		&:before {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 5rem;
+			height: .4rem;
+			background: linear-gradient(180deg, #5E93FE 0%, #8E6CFD 100%);
+			border-radius: .3rem;
+			content: '';
+		}
+	}
+.contacts_timework {
+	&>p {
+		font-size: 2.6rem;
+		font-family: $font_3;
+		padding-bottom: 1.1rem;
+		position: relative;
+		margin-bottom: 2.5rem;
+		line-height: 5rem;
+		&:before {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 5rem;
+			height: .4rem;
+			background: linear-gradient(180deg, #5E93FE 0%, #8E6CFD 100%);
+			border-radius: .3rem;
+			content: '';
+		}
+	}
+
+	ul {
+		@include flex-start;
+		margin-bottom: 0;
+		li {
+			margin-bottom: 0;
+			margin-right: 5.1rem;
+			font-size: 1.6rem;
+			p {
+				margin-bottom: 0.7rem;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+	ul {
+		margin-bottom: 3.6rem;
+		li {
+			margin-bottom: 3.8rem;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			p {
+				font-size: 1.6rem;
+				font-family: $font_3;
+				margin-bottom: 0.5rem;
+			}
+			span {
+				display: flex;
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
+.contacts_hell--btn {
+	@include standart;
+	border: .2rem solid $vio;
+	transition: all .3s ease;
+	&:hover {
+		background-color: transparent;
+		a {
+			color: $vio;
+		}
+	}
+	a {
+		font-size: 1.4rem;
+		transition: all .3s ease;
+		text-decoration: underline;
+	}
+}
+.contacts_timework {
+}
+.contacts_img {
+	width: 49.9rem;
+}
+.contacts_map {
+	width: 100%;
+	border-radius: 1.6rem;
+	overflow: hidden;
+	margin-bottom: 13.4rem;
+	#maps {
+		height: 77.5rem;
+	}
+}

@@ -1,0 +1,77 @@
+extends _layout
+
+block vars
+	- array = {body_class:'mod_background', layout_mod:'', sub_keywords:'', title_inner:'Person'}
+block content_block
+	+bread(['Главная'], 'Раздел')
+	section.person 
+		.section_in 
+			.person_main--w 
+				.person_title 
+					h1 Личный кабинет
+				.person_main--tab 
+					ul.person_tab--head 
+						li(data-tab="lk1" class="active_tab") Профиль
+						li(data-tab="lk2") Список мероприятий
+					.person_tab--contents
+						ul.person_tab--content 
+							li.person_tab--item(data-tab="lk1")
+									.person_tab--forms 
+										p Информация о пользователе
+										form
+											ul.person_form 
+												li.person_input
+													label(for="tel") Телефон 
+													input(type="tel" id="tel" required)
+												li.person_input 
+													label(for="email") E-mail 
+													input(type="email" id="email" name="mail" required)
+												li.person_input 
+													label(for="pas") Сменить пароль 
+													input(type="password" id="pas" name="pas" required)
+												li.person_input 
+													label(for="pass1") Повторите пароль 
+													input(type="password" id="pass1" name="pass1" required)
+												li.person_input 
+													label(for="familys") Фамилия 
+													input(type="text" id="familys" name="familys" required)
+												li.person_input 
+													label(for="names") Имя
+													input(type="text" name="name" id="names" required)
+												li.person_input 
+													label(for="dad") Отчество  
+													input(type="text" name="dad" id="dad" required)
+												li.person_input 
+													label(for="year") Возраст 
+													input(type="number" name="year" id="year" required)
+												li.person_input.select_inputs.normal_filter--select 
+													label(for="prof" name=" prof" required) Профессия/род деятельности 
+													select(name="profession" id="prof")
+														option(value="Кузнец") Кузнец
+														option(value="Пожарный") Пожарный
+														option(value="Депутат") Депутат
+														option(value="Программист") Программист
+											.theme_user--w 
+												p Интересующие темы
+												ul.user_theme--list 
+													-for(i = 0; i < 24; i++)
+														li.user_theme--item 
+															input(type="checkbox" name=`theme${i}` id=`themeUser${i}`)
+															label(for=`themeUser${i}`) Название темы
+											.person_save--btn
+												button(type="submit") Сохранить
+									.person_tab--img 
+										img(src="i/global/registers.png", alt="")
+							li.person_tab--item(data-tab="lk2") 
+								.person_events--items 
+									p Список мероприятий
+									ul.person_list--events 
+										-for(i = 0; i < 5; i++)
+											li.person_item--events
+												p Соглашение о сотрудничестве между администрацией Краснодарского края и Министерством финансов Российской Федерации в рамках реализации Стратегии повышения финансовой грамотности в Российской Федерации на 2017 — 2023 годы
+												.person_eventsItem--bottom 
+													p!='Рубрика: <a href="#">Другое</a>'
+													.person_eventsItem--calendar 
+														.person_eventsItem--icons 
+															img(src="i/global/eventeet.svg", alt="")
+														span 22.02.2023 в 9:00

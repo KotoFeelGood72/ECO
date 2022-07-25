@@ -1,0 +1,35 @@
+.bread {
+}
+.section_in {
+}
+.bread_main {
+	margin: 4.1rem 0;
+}
+.breadcrumb__list {
+	@include flex-start;
+}
+.breadcrumb__item {
+	font-size: 1rem;
+	font-family: $font_2;
+	position: relative;
+	&:after {
+		content: '/';
+		margin: 0 1rem;
+		color: $green;
+	}
+	&:last-child {
+		&:after {
+			display: none;
+		}
+	}
+	a {
+		font-size: 1rem;
+		font-family: $font_2;
+		color: $green;
+		text-decoration: underline;
+	}
+}
+.breadcrumb__link {
+}
+.breadcrumb__link-current {
+}

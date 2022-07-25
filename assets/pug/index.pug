@@ -1,0 +1,318 @@
+extends _layout
+
+block vars
+	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'HOME'}
+block content_block
+	section.hero 
+		.section_in 
+			.hero_main--w
+				.hero_slider.swiper 
+					.swiper-wrapper
+						-for(i = 0; i < 5; i++) 
+							.swiper-slide 
+								.hero_main
+									.hero_content 
+										.hero_title--w 
+											h1!='Финансовое</br>просвещение населения</br>Краснодарского края'
+										ul.hero_service 
+											-
+												var heroService = [
+													{
+														txt: 'Портал финансового просвещения призван помочь кубанцам разобраться в финансовых инструментах.',
+														img: 'heroService_1'
+													},
+													{
+														txt: 'Портал финансового просвещения призван помочь кубанцам разобраться в финансовых инструментах.',
+														img: 'heroService_2'
+													},
+												]
+											each item in heroService 
+												li.hero_serviceItem 
+													.hero_serviceImg 
+														img(src=`i/home/${item.img}.png`, alt="")
+													.hero_serviceTxt 
+														p=item.txt
+										.hero_btn.btn 
+											a(href="#") Подробнее
+									.hero_img 
+										img(src="i/home/hero_cart.png", alt="")
+				.hero_all--nav 
+					.hero_pug 
+					.hero_line 
+					.hero_nav 
+						.hero_nav--btn.hero_left 
+							+icon('left')
+						.hero_nav--btn.hero_right 
+							+icon('right')
+	section.hero_news
+		.section_in 
+			.hero_newsMain 
+				.hero_news--title 
+					h2 Новости рынков и финансово-экономической сферы Краснодарского края
+				ul.hero_news--list 
+					-for(i = 0; i < 4; i++)
+						li.hero_newsItem 
+							article
+								p Конкурс по финансовой грамотности пройдет  в рамках проекта  «Содействие повышению уровня финансовой грамотности населения и развитию финансового образования в Российской Федерации».
+								span 03.03.2020
+	section.home_static 
+		.section_in 
+			.home_staticMain 
+				.home_static--img
+					+pic({
+						img: 'i/home/hero_static',
+						png: true,
+						media: 1024,
+						img_mob: `i/home/mobile_desktop`
+					})
+					//- img(src="i/home/hero_static.png", alt="")
+				.home_static--indi 
+					h3 Биржевые показатели
+					.static_indi--w 
+						ul.static_indiHead--list 
+							li(data-tab="tab0" class="active_tab") Валютный рынок
+							li(data-tab="tab1") Фондовый рынок
+							li(data-tab="tab2") Финансовый рынок
+						ul.static_indiBody--list
+							-for(i = 0; i < 3; i++)
+								li.static_indiBody--tab(data-tab=`tab${i}`) 
+									ul.static_label--list
+										each item in ['Инструмент', 'Предложение', 'Спрос', 'Курс на вчера', 'Изменение, %', 'Изменение, абс.', 'Время изменения']
+											li=item
+									.static_indiTable--w(data-simplebar data-simplebar-auto-hide="false")
+										ul.static_indi--row 
+											li
+												img(src="i/country/country1.jpg", alt="")
+											li GBP/RUB
+											li 73,0476
+											li 75,8288
+											li 73,0476
+											li(class="percent_red") -3,67%
+											li(class="number_red") -2,7812
+											li 11:28:00
+										ul.static_indi--row 
+											li
+												img(src="i/country/country2.jpg", alt="")
+											li GBP/RUB
+											li 73,0476
+											li 75,8288
+											li 73,0476
+											li(class="percent_green") -3,67%
+											li(class="number_green") -2,7812
+											li 11:28:00
+										ul.static_indi--row 
+											li
+												img(src="i/country/country3.jpg", alt="")
+											li GBP/RUB
+											li 73,0476
+											li 75,8288
+											li 73,0476
+											li(class="percent_red") -3,67%
+											li(class="number_red") -2,7812
+											li 11:28:00
+										ul.static_indi--row 
+											li
+												img(src="i/country/country4.jpg", alt="")
+											li GBP/RUB
+											li 73,0476
+											li 75,8288
+											li 73,0476
+											li(class="percent_green") -3,67%
+											li(class="number_green") -2,7812
+											li 11:28:00
+										ul.static_indi--row 
+											li
+												img(src="i/country/country5.jpg", alt="")
+											li GBP/RUB
+											li 73,0476
+											li 75,8288
+											li 73,0476
+											li(class="percent_red") -3,67%
+											li(class="number_red") -2,7812
+											li 11:28:00
+										ul.static_indi--row 
+											li
+												img(src="i/country/country6.jpg", alt="")
+											li GBP/RUB
+											li 73,0476
+											li 75,8288
+											li 73,0476
+											li(class="percent_green") -3,67%
+											li(class="number_green") -2,7812
+											li 11:28:00
+										ul.static_indi--row 
+											li
+												img(src="i/country/country7.jpg", alt="")
+											li GBP/RUB
+											li 73,0476
+											li 75,8288
+											li 73,0476
+											li(class="percent_red") -3,67%
+											li(class="number_red") -2,7812
+											li 11:28:00
+										ul.static_indi--row 
+											li
+												img(src="i/country/country7.jpg", alt="")
+											li GBP/RUB
+											li 73,0476
+											li 75,8288
+											li 73,0476
+											li(class="percent_green") -3,67%
+											li(class="number_green") -2,7812
+											li 11:28:00
+										ul.static_indi--row 
+											li
+												img(src="i/country/country7.jpg", alt="")
+											li GBP/RUB
+											li 73,0476
+											li 75,8288
+											li 73,0476
+											li(class="percent_green") -3,67%
+											li(class="number_green") -2,7812
+											li 11:28:00
+										ul.static_indi--row 
+											li
+												img(src="i/country/country7.jpg", alt="")
+											li GBP/RUB
+											li 73,0476
+											li 75,8288
+											li 73,0476
+											li(class="percent_green") -3,67%
+											li(class="number_green") -2,7812
+											li 11:28:00
+										ul.static_indi--row 
+											li
+												img(src="i/country/country7.jpg", alt="")
+											li GBP/RUB
+											li 73,0476
+											li 75,8288
+											li 73,0476
+											li(class="percent_green") -3,67%
+											li(class="number_green") -2,7812
+											li 11:28:00
+										ul.static_indi--row 
+											li
+												img(src="i/country/country7.jpg", alt="")
+											li GBP/RUB
+											li 73,0476
+											li 75,8288
+											li 73,0476
+											li(class="percent_green") -3,67%
+											li(class="number_green") -2,7812
+											li 11:28:00
+										ul.static_indi--row 
+											li
+												img(src="i/country/country7.jpg", alt="")
+											li GBP/RUB
+											li 73,0476
+											li 75,8288
+											li 73,0476
+											li(class="percent_green") -3,67%
+											li(class="number_green") -2,7812
+											li 11:28:00
+						.btn_static--more 
+							a(href="#") Показать еще 
+	section.service_sliders 
+		.service_slider--main
+			.service_slider.swiper
+				.swiper-wrapper 
+					.swiper-slide 
+						.service_slide.slide_vio
+							.service_slide--img.img_first 
+								img(src="i/home/service_1.png", alt="")
+							.service_slide--content 
+								p Финансы на каждый день
+								span Министерство экономики Краснодарского края подписали совместный план мероприятий.
+					.swiper-slide 
+						.service_slide.slide_white
+							.service_slide--img.img_two 
+								img(src="i/home/service_3.png", alt="")
+							.service_slide--content 
+								p Защита прав потребителей
+								span Министерство экономики Краснодарского края подписали совместный план мероприятий.
+					.swiper-slide 
+						.service_slide.slide_green
+							.service_slide--img.img_free 
+								img(src="i/home/service_2.png", alt="")
+							.service_slide--content 
+								p Молодежи о финансах
+								span Министерство экономики Краснодарского края подписали совместный план мероприятий.
+	section.consult 
+		.section_in 
+			.consult_main--w 
+				.consult_main--head 
+					h4 Финансовые организации и консультанты 
+					a(href="#")
+						p Каталог организаций
+				ul.consult_list 
+					-for(i = 1; i < 7; i++)
+						- var consulImg = 'i/home/consult' + i + '.png'
+						li.consult_item 
+							.consult_item--img 
+								img(src=consulImg, alt="")
+							.consult_item--content 
+								p Фонд микрокредитования Краснодарского края
+								a(href="#") FMKK.RU
+	section.event 
+		.section_in 
+			.event_main--w 
+				h5 Мероприятия финансовой и экономической сферы Краснодарского края
+				.event_main 
+					.event_grid--w 
+						ul.event_grid 
+							-
+								var event = [
+									{
+										title: 'Всероссийская неделя финансовой грамотности для детей и молодежи',
+										date: '03.03.2020',
+										img: 'event1'
+									},
+									{
+										title: 'Всероссийская неделя финансовой грамотности для детей и молодежи',
+										date: '03.03.2020',
+										img: 'event2'
+									},
+									{
+										title: 'Всероссийская неделя финансовой грамотности для детей и молодежи',
+										date: '03.03.2020',
+										img: 'event3'
+									},
+									{
+										title: 'Всероссийская неделя финансовой грамотности для детей и молодежи',
+										date: '03.03.2020',
+										img: 'event4'
+									},
+								]
+							each item in event
+								li.event_item 
+									.event_item--img 
+										img(src=`i/home/${item.img}.png`, alt="")
+									.event_item--content 
+										span=item.date 
+										p=item.title
+										a(href="#") 
+											p Подробнее
+						.event_btn--more 
+							a(href="#") Все мероприятия
+					.event_calendar--w 
+						p Календарь мероприятий
+						.event_calendar 
+							#calendar(class="calendar" data-language="ru")
+	section.faq 
+		.section_in 
+			.faq_main--w 
+				.faq_main--head 
+					h4 Вопросы и ответы
+					.faq_head--btnW 
+						a(href="#") Все вопросы и ответы
+						a(href="#") Задать свой вопрос
+				ul.faq_list
+					-for(i = 0; i < 5; i++)
+						li.faq_item--w 
+							.faq_item--head 
+								p Зачем нужно заниматься личным финансовым планированием?
+								+icon('acc')
+							.faq_item--body 
+								p Делать пенсионные накопления нужно как можно раньше, чтобы не рассчитывать только на государственную пенсию. Также нужно подумать об инвестировании этих накоплений, чтобы сберечь их от инфляции. Откладывать 10 тысяч в месяц — вполне достаточно, чтобы накопить на пенсию. Всё зависит от ваших запросов. ... Для начала надо посчитать, какая пенсия вам нужна. При этом можно грубо оттолкнуться от текущего уровня расходов. Например, сейчас вы тратите на жизнь 20 тысяч ₽
+
+

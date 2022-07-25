@@ -1,0 +1,43 @@
+extends _layout
+
+block vars
+	- array = {body_class:'mod_background', layout_mod:'', sub_keywords:'', title_inner:'SINGLE MATERIAL'}
+block content_block
+	+bread(['Главная'], 'Раздел')
+	section.singleMaterial 
+		.section_in 
+			.singleMaterial_main--w 
+				.singleMaterial_main--head
+					.singleMaterial_main--title 
+						h1 Название медиа альбома 
+				.singleMaterial_slider.swiper 
+					.swiper-wrapper
+						-for(i = 0; i < 12; i++) 
+							.swiper-slide 
+								.singleMaterial_slide 
+									img(src="i/material/singleMaterial.jpg", alt="")
+				.singleMaterial_thumbslider--w
+					.singleMaterial_thumb--prev 
+						img(src="i/material/arrLeft.svg", alt="") 
+					.singleMaterial_thumbslider.swiper 
+						.swiper-wrapper
+							-for(i = 0; i < 12; i++)  
+								.swiper-slide 
+									.singleMaterial_thumbslide 
+										img(src="i/material/singleMaterial.jpg", alt="")
+					.singleMaterial_thumb--next 
+						img(src="i/material/arrLeft.svg", alt="")
+				.singleMaterial_grid--w
+					h2 Другие медиа-материалы по рубрике
+					ul.singleMaterial_grid
+						-for(i = 0; i < 8; i++)
+							li.material_item 
+									.material_item--img 
+										img(src="i/material/material_0.jpg", alt="")
+									.material_item--content 
+										.material_item--name 
+											p Фонд микрокредитования Краснодарского края
+										.material_item--date 
+											p 03.03.2020
+										.material_item--link 
+											a(href="#") Перейти в альбом

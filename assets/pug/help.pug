@@ -1,0 +1,61 @@
+extends _layout
+
+block vars
+	- array = {body_class:'mod_background', layout_mod:'', sub_keywords:'', title_inner:'CONTACTS HELP'}
+block content_block
+	+bread(['Главная'], 'Раздел')
+	section.help 
+		.section_in 
+			.help_main
+				.help_main--head
+					.help_main--headContent
+						.help_main--title 
+							h1 Отправить сообщение в поддержку
+						p Делать пенсионные накопления нужно как можно раньше, чтобы не рассчитывать только на государственную пенсию. Также нужно подумать об инвестировании этих накоплений, чтобы сберечь их от инфляции. Откладывать 10 тысяч в месяц — вполне достаточно, чтобы накопить на пенсию. Всё зависит от ваших запросов. ... Для начала надо посчитать, какая пенсия вам нужна. При этом можно грубо оттолкну
+					.help_main--headImg 
+						img(src="i/global/help_head.png", alt="")
+				.help_form--w
+					.help_form
+						form
+							ul 
+								li 
+									.help_input--w
+										label(for="name")  Ваше имя
+										input(type="text" name="your name" id="name")
+								li 
+									.help_input--w
+										label(for="email")  E-mail
+										input(type="email" name="your email" id="email")
+								li 
+									.help_input--w
+										label(for="number")  Телефон
+										input(type="number" name="your number" id="number")
+								li
+									label(for="message")  Сообщение
+									textarea(name="your message" id="message")
+								li 
+									button(type="submit") Отправить
+			.subm_main
+				.subm_main--head
+					.subm_main--headContent
+						.subm_main--title 
+							h2 Подписаться на рассылку
+						p Делать пенсионные накопления нужно как можно раньше, чтобы не рассчитывать только на государственную пенсию. Также нужно подумать об инвестировании этих накоплений, чтобы сберечь их от инфляции. Откладывать 10 тысяч в месяц — вполне достаточно, чтобы накопить на пенсию. Всё зависит от ваших запросов. ... Для начала надо посчитать, какая пенсия вам нужна. При этом можно грубо оттолкну
+					.subm_main--headImg 
+						img(src="i/global/subm.png", alt="")
+				.subm_form--w
+					.subm_form
+						form
+							ul 
+								li 
+									.subm_input--w
+										label(for="yourName") Ваше имя
+										input(type="text" name="your name" id="yourName")
+								li 
+									.help_input--w
+										label(for="yourEmail") Ваше E-Mail
+										input(type="email" name="your email" id="yourEmail")
+								li 
+									button(type="submit") Отправить
+
+					

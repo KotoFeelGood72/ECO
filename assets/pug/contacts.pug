@@ -1,0 +1,54 @@
+extends _layout
+
+block vars
+	- array = {body_class:'mod_background', layout_mod:'', sub_keywords:'', title_inner:'CONTACTS'}
+block content_block
+	+bread(['Главная'], 'Раздел')
+	section.contacts 
+		.section_in 
+			.contacts_main 
+				.contacts_content 
+					.contacts_title 
+						h1 Контактная информация
+					ul.contacts_list 
+						li.contacts_items 
+							p Адрес
+							ul 
+								li 
+									p Почтовый адрес: 
+									span 350014, Россия, г. Краснодар, ул. Красная, 35
+								li 
+									p Фактический адрес: 
+									span 350063, г. Краснодар, ул. Рашпилевская, 23 (5-6 этаж)
+							.contacts_hell--btn 
+								a(href="#") Схема проезда
+						li.contacts_items 
+							p Телефоны
+							ul 
+								li 
+									p Телефон: 
+									span +7 (861) 214-51-91; +7 (861) 214-51-91
+								li 
+									p Факс: 
+									span +7 (861) 298-59-02 
+							.contacts_hell--btn 
+								a(href="#") Заказать звонок
+						li.contacts_items 
+							p E-mail
+							ul 
+								li 
+									p E-mail: 
+									a(href="#") economy@krasnodar.ru
+							.contacts_timework 
+								p Режим работы
+								ul 
+									li 
+										p ПН-ЧТ: 
+										span 9.00-13.00, 13.50-18.00
+									li 
+										p ПТ:
+										span 9.00-13.00, 13.40-17.00
+				.contacts_img 
+					img(src="i/global/contacts.png", alt="")
+			.contacts_map 
+				#maps

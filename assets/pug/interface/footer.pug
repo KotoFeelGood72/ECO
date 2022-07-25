@@ -1,0 +1,70 @@
+footer.footer 
+	.section_in 
+		.footer_main--w 
+			.footer_main--head 
+				.footer_main--brand 
+					.header_logo
+						img(src="i/footer/logo.svg", alt="Header logo website")
+					.header_logo--desc 
+						p Финансовое просвещение населения Краснодарского края
+				.footer_head--info 
+					.footer_info--search.header_search 
+						input(type="search", name="search" placeholder="Поиск по сайту")
+						button 
+							img(src="i/global/search.svg", alt="")
+					.header_account 
+						button 
+							.header_account--icons 
+								img(src="i/global/user.svg", alt="")
+							p Кабинет
+			.footer_main--body 
+				.footer_main--nav 
+					p РАЗДЕЛЫ ПОРТАЛА
+					.footer_nav--w 
+						ul 
+							each item in ['Нормативные акты', 'Каталог финансовых организаций', 'Медиа']
+								li 
+									a(href="#")=item 
+						ul 
+							each item in ['Календарь мероприятий', 'Контакты', 'Помощь']
+								li 
+									a(href="#")=item 
+						ul 
+							each item in ['Сервисы', 'Мониторинг показателей финансового рынка']
+								li 
+									a(href="#")=item
+				.footer_main--contact 
+					.footer_contact--head 
+						p КОНТАКТЫ
+						button.header_visual
+							.header_visual--icons 
+								img(src="i/global/visual.svg", alt="") 
+							p Версия для слабовидящих
+					.footer_address 
+						p!='350063, Краснодарский край, г. Краснодар, ул. Рашпилевская, 23 (5-6 этаж). <a href="#">Показать на карте.</a>'
+						ul.footer_numbersMails 
+							each item in ['+7 (861) 214-51-91', 'economy@krasnodar.ru']
+								li 
+									a(href="#")=item
+					.footer_info--lists 
+						ul.footer_numbersMails 
+							each item in ['+7 (861) 214-51-91', 'economy@krasnodar.ru']
+								li 
+									a(href="#")=item
+						ul.footer_messenger 
+							li 
+								a(href="#")
+									.footer_social--icons 
+										img(src="i/global/tg.svg", alt="")
+									p Наш канал в Telegram
+							li 
+								a(href="#")
+									.footer_social--icons 
+										img(src="i/global/youtube.svg", alt="")
+									p Наш канал в Youtube
+			.footer_main--bottom 
+				p © 2022, Министерство экономики Краснодарского края. Все права защищены.
+				a(href="#") Политика в области обработки персональных данных
+				 
+										
+					

@@ -1,0 +1,72 @@
+// Global 
+$header: 21.3rem;
+$footer: 20rem;
+
+// Mobile
+$header_mob: 7.8rem;
+$footer_mob: 10rem;
+
+$pbm: 8rem;
+//---------------------------------------------fonts
+$font_path: "../fonts/";
+$font_11: 'Montserrat-Thin', sans-serif;
+$font_111: 'Montserrat-Light', sans-serif;
+$font_1: 'Montserrat-Regular', sans-serif;
+$font_2: 'Montserrat-Medium', sans-serif;
+$font_3: 'Montserrat-SemiBold', sans-serif;
+$font_4: 'Montserrat-Bold', sans-serif;
+$font_size_base: 2rem;
+//---------------------------------------------fonts###
+
+//---------------------------------------------colors
+$white: #fff;
+$black: #2B2D41;
+$vio: #6987DF;
+$green: #25C0A4;
+
+
+$color_text_base: $black;
+$color_link_base: $black;
+$body_bg: $white;
+//---------------------------------------------colors###
+
+//---------------------------------------------z-index
+$z-index: (
+	popup : 101,
+	header : 100,
+	footer : 100,
+	el: -1,
+
+);
+//---------------------------------------------z-index###
+
+//---------------------------------------------layout
+$page_width: 165.9rem;
+
+//---------------------------------------------layout###
+
+//---------------------------------------------global values
+$gl_radius: .8rem;
+//---------------------------------------------global values###
+
+//---------------------------------------------media points
+$point_1: 1200px;
+$point_2: 1024px;
+$point_3: 1023px;
+$point_4: 768px;
+$point_5: 640px;
+$point_6: 480px;
+$point_7: 375px;
+$point_8: 320px;
+//---------------------------------------------media points
+
+//---------------------------------------------forms
+$input_height: 4rem;
+$input_offset: 0 2rem;
+$input_font_size: $font_size_base;
+$input_border_color: #ccc;
+$input_border_color_active: $black;
+$input_placeholder_color: rgba($black, .4);
+$input_text_color: $black;
+$input_radius: $gl_radius;
+//---------------------------------------------forms###

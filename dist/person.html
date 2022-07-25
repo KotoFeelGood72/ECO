@@ -1,0 +1,475 @@
+
+<!--  Breadcrumb-->
+<!--  items - pages in array, e.g. (['Main page', 'News'])-->
+<!--  last - last active page in span, e.g. (['Main page', 'News'], 'News detail')--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Person</title>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" media="all" href="styles/main_global.css"/>
+  </head>
+  <body class="mod_background">
+    <header class="header">
+      <div class="section_in"> 
+        <div class="header_main--w"> 
+          <div class="header_main--top"> 
+            <div class="header_logo--w">
+              <div class="header_logo"><img src="i/global/logotype.svg" alt="Header logo website"></div>
+              <div class="header_logo--desc"> 
+                <p>Финансовое просвещение населения Краснодарского края</p>
+              </div>
+            </div>
+            <div class="header_burger"><img src="i/global/burger.svg" alt=""></div>
+            <div class="header_social--w"> 
+              <ul class="header_social"> 
+                <li> <a href="#"> <img src="i/global/tg.svg" alt=""></a></li>
+                <li> <a href="#"> <img src="i/global/youtube.svg" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="header_visual">
+              <button>
+                <div class="header_visual--icons"> <img src="i/global/visual.svg" alt=""></div>
+                <p>Версия для слабовидящих</p>
+              </button>
+            </div>
+            <ul class="header_info"> 
+              <li> <a href="#">+7 (861) 214-51-91</a></li>
+              <li> <a href="#">economy@krasnodar.ru</a></li>
+            </ul>
+            <div class="header_search"> 
+              <input type="search" name="search website" placeholder="Поиск по сайту">
+              <button> <img src="i/global/search.svg" alt=""></button>
+            </div>
+            <div class="header_account"> 
+              <button> 
+                <div class="header_account--icons"> <img src="i/global/user.svg" alt=""></div>
+                <p>Кабинет</p>
+              </button>
+            </div>
+          </div>
+          <div class="header_main--bottom"> 
+            <nav class="header_nav"> 
+              <ul> 
+                <li> <a href="#">Нормативные акты</a></li>
+                <li> <a href="#">Каталог финансовых организаций</a></li>
+                <li> <a href="#">Медиа</a></li>
+                <li> <a href="#">Календарь</a></li>
+                <li> <a href="#">Контакты</a></li>
+                <li> <a href="#">Помощь</a></li>
+                <li> <a href="#">Сервисы</a></li>
+                <li> <a href="#">Мониторинг показателей финансового рынка</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="base">
+        <section class="bread">
+          <div class="section_in">
+            <div class="bread_main">
+              <ul class="breadcrumb__list">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#" title="Главная">Главная</a></li>
+                <li class="breadcrumb__item"><span class="breadcrumb__link-current">Раздел</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="person"> 
+          <div class="section_in"> 
+            <div class="person_main--w"> 
+              <div class="person_title"> 
+                <h1>Личный кабинет</h1>
+              </div>
+              <div class="person_main--tab"> 
+                <ul class="person_tab--head"> 
+                  <li class="active_tab" data-tab="lk1">Профиль</li>
+                  <li data-tab="lk2">Список мероприятий</li>
+                </ul>
+                <div class="person_tab--contents">
+                  <ul class="person_tab--content"> 
+                    <li class="person_tab--item" data-tab="lk1">
+                      <div class="person_tab--forms"> 
+                        <p>Информация о пользователе</p>
+                        <form>
+                          <ul class="person_form"> 
+                            <li class="person_input">
+                              <label for="tel">Телефон </label>
+                              <input type="tel" id="tel" required>
+                            </li>
+                            <li class="person_input"> 
+                              <label for="email">E-mail </label>
+                              <input type="email" id="email" name="mail" required>
+                            </li>
+                            <li class="person_input"> 
+                              <label for="pas">Сменить пароль </label>
+                              <input type="password" id="pas" name="pas" required>
+                            </li>
+                            <li class="person_input"> 
+                              <label for="pass1">Повторите пароль </label>
+                              <input type="password" id="pass1" name="pass1" required>
+                            </li>
+                            <li class="person_input"> 
+                              <label for="familys">Фамилия </label>
+                              <input type="text" id="familys" name="familys" required>
+                            </li>
+                            <li class="person_input"> 
+                              <label for="names">Имя</label>
+                              <input type="text" name="name" id="names" required>
+                            </li>
+                            <li class="person_input"> 
+                              <label for="dad">Отчество  </label>
+                              <input type="text" name="dad" id="dad" required>
+                            </li>
+                            <li class="person_input"> 
+                              <label for="year">Возраст </label>
+                              <input type="number" name="year" id="year" required>
+                            </li>
+                            <li class="person_input select_inputs normal_filter--select"> 
+                              <label for="prof" name=" prof" required>Профессия/род деятельности </label>
+                              <select name="profession" id="prof">
+                                <option value="Кузнец">Кузнец</option>
+                                <option value="Пожарный">Пожарный</option>
+                                <option value="Депутат">Депутат</option>
+                                <option value="Программист">Программист</option>
+                              </select>
+                            </li>
+                          </ul>
+                          <div class="theme_user--w"> 
+                            <p>Интересующие темы</p>
+                            <ul class="user_theme--list"> 
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme0" id="themeUser0">
+                                <label for="themeUser0">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme1" id="themeUser1">
+                                <label for="themeUser1">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme2" id="themeUser2">
+                                <label for="themeUser2">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme3" id="themeUser3">
+                                <label for="themeUser3">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme4" id="themeUser4">
+                                <label for="themeUser4">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme5" id="themeUser5">
+                                <label for="themeUser5">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme6" id="themeUser6">
+                                <label for="themeUser6">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme7" id="themeUser7">
+                                <label for="themeUser7">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme8" id="themeUser8">
+                                <label for="themeUser8">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme9" id="themeUser9">
+                                <label for="themeUser9">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme10" id="themeUser10">
+                                <label for="themeUser10">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme11" id="themeUser11">
+                                <label for="themeUser11">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme12" id="themeUser12">
+                                <label for="themeUser12">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme13" id="themeUser13">
+                                <label for="themeUser13">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme14" id="themeUser14">
+                                <label for="themeUser14">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme15" id="themeUser15">
+                                <label for="themeUser15">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme16" id="themeUser16">
+                                <label for="themeUser16">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme17" id="themeUser17">
+                                <label for="themeUser17">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme18" id="themeUser18">
+                                <label for="themeUser18">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme19" id="themeUser19">
+                                <label for="themeUser19">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme20" id="themeUser20">
+                                <label for="themeUser20">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme21" id="themeUser21">
+                                <label for="themeUser21">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme22" id="themeUser22">
+                                <label for="themeUser22">Название темы</label>
+                              </li>
+                              <li class="user_theme--item"> 
+                                <input type="checkbox" name="theme23" id="themeUser23">
+                                <label for="themeUser23">Название темы</label>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="person_save--btn">
+                            <button type="submit">Сохранить</button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="person_tab--img"> <img src="i/global/registers.png" alt=""></div>
+                    </li>
+                    <li class="person_tab--item" data-tab="lk2"> 
+                      <div class="person_events--items"> 
+                        <p>Список мероприятий</p>
+                        <ul class="person_list--events"> 
+                          <li class="person_item--events">
+                            <p>Соглашение о сотрудничестве между администрацией Краснодарского края и Министерством финансов Российской Федерации в рамках реализации Стратегии повышения финансовой грамотности в Российской Федерации на 2017 — 2023 годы</p>
+                            <div class="person_eventsItem--bottom"> 
+                              <p>Рубрика: <a href="#">Другое</a></p>
+                              <div class="person_eventsItem--calendar"> 
+                                <div class="person_eventsItem--icons"> <img src="i/global/eventeet.svg" alt=""></div><span>22.02.2023 в 9:00</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="person_item--events">
+                            <p>Соглашение о сотрудничестве между администрацией Краснодарского края и Министерством финансов Российской Федерации в рамках реализации Стратегии повышения финансовой грамотности в Российской Федерации на 2017 — 2023 годы</p>
+                            <div class="person_eventsItem--bottom"> 
+                              <p>Рубрика: <a href="#">Другое</a></p>
+                              <div class="person_eventsItem--calendar"> 
+                                <div class="person_eventsItem--icons"> <img src="i/global/eventeet.svg" alt=""></div><span>22.02.2023 в 9:00</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="person_item--events">
+                            <p>Соглашение о сотрудничестве между администрацией Краснодарского края и Министерством финансов Российской Федерации в рамках реализации Стратегии повышения финансовой грамотности в Российской Федерации на 2017 — 2023 годы</p>
+                            <div class="person_eventsItem--bottom"> 
+                              <p>Рубрика: <a href="#">Другое</a></p>
+                              <div class="person_eventsItem--calendar"> 
+                                <div class="person_eventsItem--icons"> <img src="i/global/eventeet.svg" alt=""></div><span>22.02.2023 в 9:00</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="person_item--events">
+                            <p>Соглашение о сотрудничестве между администрацией Краснодарского края и Министерством финансов Российской Федерации в рамках реализации Стратегии повышения финансовой грамотности в Российской Федерации на 2017 — 2023 годы</p>
+                            <div class="person_eventsItem--bottom"> 
+                              <p>Рубрика: <a href="#">Другое</a></p>
+                              <div class="person_eventsItem--calendar"> 
+                                <div class="person_eventsItem--icons"> <img src="i/global/eventeet.svg" alt=""></div><span>22.02.2023 в 9:00</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="person_item--events">
+                            <p>Соглашение о сотрудничестве между администрацией Краснодарского края и Министерством финансов Российской Федерации в рамках реализации Стратегии повышения финансовой грамотности в Российской Федерации на 2017 — 2023 годы</p>
+                            <div class="person_eventsItem--bottom"> 
+                              <p>Рубрика: <a href="#">Другое</a></p>
+                              <div class="person_eventsItem--calendar"> 
+                                <div class="person_eventsItem--icons"> <img src="i/global/eventeet.svg" alt=""></div><span>22.02.2023 в 9:00</span>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer"> 
+        <div class="section_in"> 
+          <div class="footer_main--w"> 
+            <div class="footer_main--head"> 
+              <div class="footer_main--brand"> 
+                <div class="header_logo"><img src="i/footer/logo.svg" alt="Header logo website"></div>
+                <div class="header_logo--desc"> 
+                  <p>Финансовое просвещение населения Краснодарского края</p>
+                </div>
+              </div>
+              <div class="footer_head--info"> 
+                <div class="footer_info--search header_search"> 
+                  <input type="search" name="search" placeholder="Поиск по сайту">
+                  <button> <img src="i/global/search.svg" alt=""></button>
+                </div>
+                <div class="header_account"> 
+                  <button> 
+                    <div class="header_account--icons"> <img src="i/global/user.svg" alt=""></div>
+                    <p>Кабинет</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="footer_main--body"> 
+              <div class="footer_main--nav"> 
+                <p>РАЗДЕЛЫ ПОРТАЛА</p>
+                <div class="footer_nav--w"> 
+                  <ul> 
+                    <li> <a href="#">Нормативные акты</a></li>
+                    <li> <a href="#">Каталог финансовых организаций</a></li>
+                    <li> <a href="#">Медиа</a></li>
+                  </ul>
+                  <ul> 
+                    <li> <a href="#">Календарь мероприятий</a></li>
+                    <li> <a href="#">Контакты</a></li>
+                    <li> <a href="#">Помощь</a></li>
+                  </ul>
+                  <ul> 
+                    <li> <a href="#">Сервисы</a></li>
+                    <li> <a href="#">Мониторинг показателей финансового рынка</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer_main--contact"> 
+                <div class="footer_contact--head"> 
+                  <p>КОНТАКТЫ</p>
+                  <button class="header_visual">
+                    <div class="header_visual--icons"> <img src="i/global/visual.svg" alt=""></div>
+                    <p>Версия для слабовидящих</p>
+                  </button>
+                </div>
+                <div class="footer_address"> 
+                  <p>350063, Краснодарский край, г. Краснодар, ул. Рашпилевская, 23 (5-6 этаж). <a href="#">Показать на карте.</a></p>
+                  <ul class="footer_numbersMails"> 
+                    <li> <a href="#">+7 (861) 214-51-91</a></li>
+                    <li> <a href="#">economy@krasnodar.ru</a></li>
+                  </ul>
+                </div>
+                <div class="footer_info--lists"> 
+                  <ul class="footer_numbersMails"> 
+                    <li> <a href="#">+7 (861) 214-51-91</a></li>
+                    <li> <a href="#">economy@krasnodar.ru</a></li>
+                  </ul>
+                  <ul class="footer_messenger"> 
+                    <li> <a href="#">
+                        <div class="footer_social--icons"> <img src="i/global/tg.svg" alt=""></div>
+                        <p>Наш канал в Telegram</p></a></li>
+                    <li> <a href="#">
+                        <div class="footer_social--icons"> <img src="i/global/youtube.svg" alt=""></div>
+                        <p>Наш канал в Youtube</p></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer_main--bottom"> 
+              <p>© 2022, Министерство экономики Краснодарского края. Все права защищены.</p><a href="#">Политика в области обработки персональных данных</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js"><\/script>')</script>
+    <script type="text/javascript">window.productionStatus = 'development';</script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=de0ee812-515f-4988-a580-639be65741a6&amp;lang=ru_RU"></script>
+    <script src="js/libs.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/jsCalendar.lang.ru.js"> </script>
+    <script src="js/main.js"></script>
+    <!-- Burger menu -->
+    <div class="burger"> 
+      <div class="burger_main"> 
+        <div class="burger_head"> 
+          <div class="burger_logo"> <img src="i/global/burgers.svg" alt="Header logo website"></div>
+          <div class="burger_close"> <img src="i/global/closes.svg" alt=""></div>
+        </div>
+        <div class="burger_body"> 
+          <div class="burger_visual"> 
+            <button class="header_visual">
+              <div class="header_visual--icons"> <img src="i/global/visual.svg" alt=""></div>
+              <p>Версия для слабовидящих</p>
+            </button>
+          </div>
+          <nav class="burger_nav"> 
+            <ul> 
+              <li> <a href="#">Нормативные акты</a></li>
+              <li> <a href="#">Каталог финансовых организаций</a></li>
+              <li> <a href="#">Медиа</a></li>
+              <li> <a href="#">Календарь</a></li>
+              <li> <a href="#">Контакты</a></li>
+              <li> <a href="#">Помощь</a></li>
+              <li> <a href="#">Сервисы</a></li>
+              <li> <a href="#">Мониторинг показателей финансового рынка</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="burger_bottom"> 
+          <div class="footer_info--search header_search"> 
+            <input type="search" name="search" placeholder="Поиск по сайту">
+            <button> <img src="i/global/search.svg" alt=""></button>
+          </div>
+          <div class="burger_bottom--interface"> 
+            <ul> 
+              <li> <a href="#"><img src="i/global/telegram.svg" alt=""></a></li>
+              <li> <a href="#"><img src="i/global/youtubse.svg" alt=""></a></li>
+            </ul>
+            <div class="header_account"> 
+              <button> 
+                <div class="header_account--icons"> <img src="i/global/user.svg" alt=""></div>
+                <p>Кабинет</p>
+              </button>
+            </div>
+          </div>
+          <ul class="footer_numbersMails"> 
+            <li> <a href="#">+7 (861) 214-51-91</a></li>
+            <li> <a href="#">economy@krasnodar.ru</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="close">
+      <div class="close_main"> 
+        <p>Проверьте правильность полей!</p>
+        <div class="close_icon">
+           <svg class="checkmark_close" class="test-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="3" stroke-dasharray="100"><circle class="close__circle" cx="26" cy="26" r="25" fill="none"/><path class="icon-path" id="check" d="M 15,15 L 32,33 M 32,15 L 15,33"></path></svg></div>
+      </div>
+    </div>
+    <div class="succes">
+      <div class="succes_main"> 
+        <p>Ваше сообщение успешно отправлено!</p>
+        <div class="succes_icon">
+           <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+        </div>
+      </div>
+    </div><svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<defs>
+<filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />    
+<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+<feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+</filter>
+</defs>
+</svg>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+extends _layout
+
+block vars
+	- array = {body_class:'mod_background', layout_mod:'', sub_keywords:'', title_inner:'Report'}
+block content_block
+	+bread(['Главная'], 'Раздел')
+	section.person 
+		.section_in 
+			.person_main--w 
+				.person_title 
+					h1 Личный кабинет
+				.person_main--tab 
+					ul.person_tab--head 
+						li(data-tab="lk1" class="active_tab") Профиль
+						li(data-tab="lk3") Отчёты
+					.person_tab--contents
+						ul.person_tab--content 
+							li.person_tab--item(data-tab="lk1")
+									.person_tab--forms 
+										p Информация о пользователе
+										form
+											ul.person_form 
+												li.person_input
+													label(for="tel") Телефон 
+													input(type="tel" id="tel" name="tel" required)
+												li.person_input 
+													label(for="email") E-mail 
+													input(type="email" id="email" name="email" required)
+												li.person_input 
+													label(for="pass") Сменить пароль 
+													input(type="password" id="pass" name="pass" required)
+												li.person_input 
+													label(for="pass1") Повторите пароль 
+													input(type="password" id="pass1" name="pass1" required)
+												li.person_input 
+													label(for="family") Фамилия 
+													input(type="text" id="family" name="family" required)
+												li.person_input 
+													label(for="names") Имя
+													input(type="text" name="name" id="names" required)
+												li.person_input 
+													label(for="dad") Отчество  
+													input(type="text" name="dad" id="dad" required)
+												li.person_input 
+													label(for="year") Возраст 
+													input(type="number" name="year" id="year" required)
+												li.person_input.select_inputs.normal_filter--select 
+													label(for="prof") Профессия/род деятельности 
+													select(name="profession" id="prof")
+														option(value="Кузнец") Кузнец
+														option(value="Пожарный") Пожарный
+														option(value="Депутат") Депутат
+														option(value="Программист") Программист
+											.theme_user--w 
+												p Интересующие темы
+												ul.user_theme--list 
+													-for(i = 0; i < 24; i++)
+														li.user_theme--item 
+															input(type="checkbox" name=`theme${i}` id=`themeUser${i}`)
+															label(for=`themeUser${i}`) Название темы
+											.person_save--btn
+												button(type="submit") Сохранить
+									.person_tab--img 
+										img(src="i/global/registers.png", alt="")
+							li.person_tab--item.mod_report(data-tab="lk3") 
+								.person_report--items 
+									p Отчёты
+									.report_main--list 
+										.report_list--headItem 
+											ul 
+												li название
+												li дата окончания подачи
+												li дата редактирования
+										ul.report_list 
+											-for(i = 0; i < 18; i++)
+												if i == 2
+													li.report_list--item
+														ul 
+															li Название отчёта
+															li 22.02.2022
+															li 22.02.2022
+															li 
+																button(class="disable_btn disable btns") Редактировать
+												else if i == 5
+													li.report_list--item
+														ul 
+															li Название отчёта
+															li 22.02.2022
+															li 22.02.2022
+															li 
+																button(class="submit_btn btns") Отправить
+												else if i == 10
+													li.report_list--item
+														ul 
+															li Название отчёта
+															li 22.02.2022
+															li 22.02.2022
+															li 
+																button(class="submit_btn btns") Отправить
+												else if i == 8
+													li.report_list--item
+														ul 
+															li Название отчёта
+															li 22.02.2022
+															li 22.02.2022
+															li 
+																button(class="other_btn btns") Редактировать
+												else
+													li.report_list--item
+														ul 
+															li Название отчёта
+															li 22.02.2022
+															li 22.02.2022
+															li 
+																button(class="succes_btn btns") Редактировать
+										.normal_main--bottom 
+											.normal_btn--more 
+												a(href="#") Показать ещё
+											.normal_list-var 
+												p Выводить:
+												ul 
+													li 
+														a(href="#") 10
+													li 
+														a(href="#") 50
+													li 
+														a(href="#") 100
+												

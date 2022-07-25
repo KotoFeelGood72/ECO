@@ -1,0 +1,69 @@
+.login {
+}
+.section_in {
+}
+.login_main--w {
+}
+.login_title {
+	margin-bottom: 5.9rem;
+}
+.login_form--w {
+	background: $white;
+	box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.06);
+	border-radius: 1.6rem;
+	margin-bottom: 24rem;
+	padding: 2.9rem 3.3rem 4.7rem 2.7rem;
+}
+.login_form {
+	ul {
+		@include flex-space;
+		flex-wrap: wrap;
+		flex-direction: row;
+		li {
+			@include input;
+			&:first-child {
+				margin-right: 3rem;
+			}
+			&:nth-child(-n+2) {
+				flex: 0 0 49%;
+				margin-bottom: 4rem;
+			}
+		}
+	}
+}
+.login_input--w {
+}
+.login_btn--all {
+	ul {
+		@include flex-start;
+		li {
+
+			margin-right: 7rem;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				font-size: 2rem;
+				font-family: $font_3;
+				color: $vio;
+				border-bottom: .1rem solid $vio;
+				&:hover {
+					border-bottom: .1rem solid transparent;
+				}
+			}
+			button {
+				@include submit;
+			}
+		}
+	}
+}
+
+.lost_form {
+	.login_form {
+		ul {
+			li {
+				flex: 100%!important;
+			}
+		}
+	}
+}

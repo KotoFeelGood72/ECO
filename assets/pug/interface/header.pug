@@ -1,0 +1,41 @@
+header.header
+	.section_in 
+		.header_main--w 
+			.header_main--top 
+				.header_logo--w
+					.header_logo
+						img(src="i/global/logotype.svg", alt="Header logo website")
+					.header_logo--desc 
+						p Финансовое просвещение населения Краснодарского края
+				.header_burger
+					img(src="i/global/burger.svg", alt="")
+				.header_social--w 
+					ul.header_social 
+						each item in ['tg', 'youtube']
+							li 
+								a(href="#") 
+									img(src=`i/global/${item}.svg`, alt="")
+				.header_visual
+					button
+						.header_visual--icons 
+							img(src="i/global/visual.svg", alt="") 
+						p Версия для слабовидящих
+				ul.header_info 
+					each item in ['+7 (861) 214-51-91', 'economy@krasnodar.ru']
+						li 
+							a(href="#")=item
+				.header_search 
+					input(type="search", name="search website" placeholder="Поиск по сайту") 
+					button 
+						img(src="i/global/search.svg", alt="")
+				.header_account 
+					button 
+						.header_account--icons 
+							img(src="i/global/user.svg", alt="")
+						p Кабинет
+			.header_main--bottom 
+				nav.header_nav 
+					ul 
+						each item in ['Нормативные акты', 'Каталог финансовых организаций', 'Медиа', 'Календарь', 'Контакты', 'Помощь', 'Сервисы', 'Мониторинг показателей финансового рынка']
+							li 
+								a(href="#")=item 

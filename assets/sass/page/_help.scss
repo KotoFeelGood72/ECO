@@ -1,0 +1,134 @@
+.help {
+}
+.section_in {
+}
+.help_main {
+}
+.help_main--head {
+	@include flex-space;
+	align-items: flex-start;
+	margin-bottom: 4.5rem;
+}
+.help_main--headContent {
+	max-width: 108.3rem;
+	margin-right: 30rem;
+	p {
+		font-size: 1.4rem;
+		line-height: 2.4rem;
+	}
+}
+.help_main--title {
+	max-width: 60.4rem;
+	margin-bottom: 4.1rem;
+}
+.help_main--headImg {
+	width: 17.6rem;
+}
+.help_form--w {
+	background: $white;
+	box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.06);
+	border-radius: 1.6rem;
+	margin-bottom: 4.7rem;
+}
+.help_form {
+	padding: 2.9rem 3.3rem 4.7rem 2.7rem;
+	ul {
+		@include flex-start;
+		flex-wrap: wrap;
+		li {
+			@include input;
+			margin-bottom: 1.9rem;
+			&:nth-child(-n+3) {
+				margin-right: 2.8rem;
+				width: 100%;
+				width: 51.4rem;
+			}
+			&:nth-child(3) {
+				margin-right: 0;
+			}
+			&:nth-child(4) {
+				width: 100%;
+				@include textarea;
+				margin-bottom: 3rem;
+				textarea {
+					height: 16.2rem;
+				}
+			}
+			&:last-child {
+				button {
+					@include submit;
+				}
+			}
+		}
+	}
+}
+.help_input--w {
+}
+.subm_main {
+}
+.subm_main--head {
+	@include flex-space;
+	align-items: flex-start;
+	margin-bottom: 4.5rem;
+}
+.subm_main--headContent {
+	max-width: 108.3rem;
+	margin-right: 39rem;
+	p {
+		font-size: 1.4rem;
+		line-height: 2.4rem;
+	}
+}
+.subm_main--title {
+	max-width: 44.3rem;
+	margin-bottom: 4.1rem;
+	h2 {
+		display: inline;
+		box-decoration-break: clone;
+		padding: 0.5rem 1rem;
+		filter: url('#goo');
+		background-color: $vio;
+		line-height: 6.8rem;
+		font-size: 4.8rem;
+		color: $white;
+		max-width: 35.8rem;
+	}
+}
+.subm_main--headImg {
+	margin-top: 2.4rem;
+	width: 17.5rem;
+}
+.subm_form--w {
+	background: $white;
+	box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.06);
+	border-radius: 1.6rem;
+	margin-bottom: 18.8rem;
+}
+.subm_form {
+	padding: 2.9rem 3.3rem 4.7rem 2.7rem;
+	ul {
+		@include flex-space;
+		flex-wrap: wrap;
+		flex-direction: row;
+		li {
+			@include input;
+			&:first-child {
+				margin-right: 3rem;
+			}
+			&:nth-child(-n+2) {
+				flex: 0 0 49%;
+				margin-bottom: 3.7rem;
+			}
+			&:last-child {
+				button {
+					@include submit;
+					display: inline-flex;
+					background: linear-gradient(180deg, #5E93FE 0%, #8E6CFD 100%);
+					&:hover {
+						background: linear-gradient(180deg, #8E6CFD 0%, #5E93FE 100%);
+					}
+				}
+			}
+		}
+	}
+}

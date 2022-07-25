@@ -1,0 +1,211 @@
+extends _layout
+
+block vars
+	- array = {body_class:'mod_background', layout_mod:'', sub_keywords:'', title_inner:'Register'}
+block content_block
+	+bread(['Главная'], 'Раздел')
+	section.register 
+		.section_in 
+			.register_main--w
+				.register_main--content 
+					.register_title 
+						h1 Регистрация
+					ul.register_form--head
+						li(data-tab="reg1" class="active_tab") Юридическое лицо
+						li(data-tab="reg2") Индивидуальный предприниматель
+						li(data-tab="reg3") Физическое лицо
+					.ragister_tabs
+						ul.register_form--list 
+							li.register_form--item(data-tab="reg1")
+								.register_form--w
+									form
+										.register_inform 
+											p Информация о компании
+											.register_group
+												.register_group--top
+													.register_input
+														label(for="inn") ИНН
+														input(type="text" name="inn" id="inn" required)
+													.register_input
+														label(for="nameOrg") Наименование организации
+														input(type="text" name="nameOrg" id="nameOrg" required)
+												.register_group--body
+													.register_input
+														label(for="family") Фамилия ответственного лица
+														input(type="text" name="family" id="family" required)
+													.register_input
+														label(for="namePeople") Имя ответственного лица
+														input(type="text" name="namePeople" id="namePeople" required)
+													.register_input
+														label(for="fam") Отчество ответственного лица
+														input(type="text" name="fam" id="fam" required)
+												.register_input
+													label(for="prof") Должность ответственного лица
+													input(type="text" name="prof" id="prof" required)
+									form
+										.register_inform.register_inform--user 
+											p Информация о пользователе
+											.register_group
+												.register_group--top
+													.register_input
+														label(for="phone") Телефон
+														input(type="tel" name="phone" id="phone" required)
+													.register_input
+														label(for="E-mail") E-mail
+														input(type="email" name="E-mail" id="email" required)
+												.register_group--body
+													.register_input
+														label(for="pass") Пароль
+														input(type="password" name="pass" id="pass" required)
+													.register_input
+														label(for="pass1") Повторите пароль
+														input(type="password" name="pass1" id="pass1" required)
+												.register_group--bottom
+													.register_input
+														label(for="fam1") Фамилия 
+														input(type="text" name="fam1" id="fam1" required)
+													.register_input
+														label(for="name2") Имя 
+														input(type="text" name="name2" id="name2" required)
+													.register_input
+														label(for="dad") Отчество  
+														input(type="text" name="dad" id="dad" required)
+										.register_check--all 
+											ul 
+												li 
+													input(type="checkbox", name="succes5" id="succes5")
+													label(for="succes5")!='Согласен с <a href="#"> условиями </a> использования настоящего ресурса' 
+												li 
+													input(type="checkbox", name="succes6" id="succes6")
+													label(for="succes6")!='Я даю свое <a href="#"> согласие </a> на обработку Министерством экономики Краснодарского края своих персональных данных' 
+										.register_all--btn 
+											ul 
+												li 
+													button(type="submit") Зарегистрироваться
+												li 
+													a(href="#") Восстановить пароль
+												li 
+													a(href="#") Войти
+								.person_tab--img 
+									img(src="i/global/registers.png", alt="")
+							li.register_form--item(data-tab="reg2")
+								.register_form--w
+									form
+										.register_inform 
+											p Информация о ИП
+											.register_group
+												.register_group--top
+													.register_input
+														label(for="inn") ИНН
+														input(type="text" name="inn" id="inn")
+													.register_input
+														label(for="nameOrg") Наименование организации
+														input(type="text" name="nameOrg" id="nameOrg")
+												.register_group--body
+													.register_input
+														label(for="family") Фамилия ответственного лица
+														input(type="text" name="family" id="family" required)
+													.register_input
+														label(for="namePeople") Имя ответственного лица
+														input(type="text" name="namePeople" id="namePeople" required)
+													.register_input
+														label(for="fam") Отчество ответственного лица
+														input(type="text" name="fam" id="fam" required)
+												.register_input
+													label(for="prof") Должность ответственного лица
+													input(type="text" name="prof" id="prof" required)
+									form
+										.register_inform.register_inform--user 
+											p Информация о пользователе
+											.register_group
+												.register_group--top
+													.register_input
+														label(for="phone") Телефон
+														input(type="tel" name="phone" id="phone" required)
+													.register_input
+														label(for="E-mail") E-mail
+														input(type="email" name="E-mail" id="email" required)
+												.register_group--body
+													.register_input
+														label(for="pass") Пароль
+														input(type="password" name="pass" id="pass" required)
+													.register_input
+														label(for="pass1") Повторите пароль
+														input(type="password" name="pass1" id="pass1" required)
+												.register_group--bottom
+													.register_input
+														label(for="fam1") Фамилия 
+														input(type="text" name="fam1" id="fam1" required)
+													.register_input
+														label(for="name2") Имя 
+														input(type="text" name="name2" id="name2" required)
+													.register_input
+														label(for="dad") Отчество  
+														input(type="text" name="dad" id="dad" required)
+										.register_check--all 
+											ul 
+												li 
+													input(type="checkbox", name="succes1" id="succes1")
+													label(for="succes1")!='Согласен с <a href="#"> условиями </a> использования настоящего ресурса' 
+												li 
+													input(type="checkbox", name="succes2" id="succes2")
+													label(for="succes2")!='Я даю свое <a href="#"> согласие </a> на обработку Министерством экономики Краснодарского края своих персональных данных' 
+										.register_all--btn 
+											ul 
+												li 
+													button(type="submit") Зарегистрироваться
+												li 
+													a(href="#") Восстановить пароль
+												li 
+													a(href="#") Войти
+								.person_tab--img 
+									img(src="i/global/registers.png", alt="")
+							li.register_form--item(data-tab="reg3")
+								.register_form--w
+									form
+										.register_inform.register_inform--user 
+											p Информация о пользователе
+											.register_group
+												.register_group--top
+													.register_input
+														label(for="phone") Телефон
+														input(type="tel" name="phone" id="phone" required)
+													.register_input
+														label(for="E-mail") E-mail
+														input(type="email" name="E-mail" id="email" required)
+												.register_group--body
+													.register_input
+														label(for="pass") Пароль
+														input(type="password" name="pass" id="pass" required)
+													.register_input
+														label(for="pass1") Повторите пароль
+														input(type="password" name="pass1" id="pass1" required)
+												.register_group--bottom
+													.register_input
+														label(for="fam1") Фамилия 
+														input(type="text" name="fam1" id="fam1" required)
+													.register_input
+														label(for="name2") Имя 
+														input(type="text" name="name2" id="name2" required)
+													.register_input
+														label(for="dad") Отчество  
+														input(type="text" name="dad" id="dad" required)
+										.register_check--all 
+											ul 
+												li 
+													input(type="checkbox", name="succes3" id="succes3")
+													label(for="succes3")!='Согласен с <a href="#"> условиями </a> использования настоящего ресурса' 
+												li 
+													input(type="checkbox", name="succes4" id="succes4")
+													label(for="succes4")!='Я даю свое <a href="#"> согласие </a> на обработку Министерством экономики Краснодарского края своих персональных данных' 
+										.register_all--btn 
+											ul 
+												li 
+													button(type="submit") Зарегистрироваться
+												li 
+													a(href="#") Восстановить пароль
+												li 
+													a(href="#") Войти
+								.person_tab--img 
+									img(src="i/global/registers.png", alt="")
+				

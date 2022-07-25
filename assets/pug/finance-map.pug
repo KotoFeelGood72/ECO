@@ -1,0 +1,62 @@
+extends _layout
+
+block vars
+	- array = {body_class:'mod_background', layout_mod:'', sub_keywords:'', title_inner:'FINANCE'}
+block content_block
+	+bread(['Главная'], 'Раздел')
+
+	section.finance_map
+		.section_in
+			.financeMap_main--w 
+				.financeMap_main
+					.normal_main--head
+						.finance_head--top
+							.finance_head--title
+								h1!='Карта финансовых организаций' 
+							.finance_headMap--number 
+								h2 128
+								p Организаций
+						.normal_head--filter 
+							ul
+								li
+									p Текст
+									.normal_filter--inputTxt 
+										input(type="text", name="txt" placeholder="Например, текст")
+								li
+									p Муниципальное образование
+									.normal_filter--select 
+										select(name="oiv" id="oiv")
+											option(value="Все виды") Все виды  
+											option(value="Все виды") Все виды 
+											option(value="Все виды") Все виды 
+											option(value="Все виды") Все виды 
+											option(value="Все виды") Все виды
+								li
+									p Тип объекта
+									.normal_filter--select 
+										select(name="oiv" id="oiv")
+											option(value="Все виды") Все виды  
+											option(value="Все виды") Все виды 
+											option(value="Все виды") Все виды 
+											option(value="Все виды") Все виды 
+											option(value="Все виды") Все виды
+								li
+									p Адрес
+									.normal_filter--inputTxt 
+										input(type="text", name="txt" placeholder="Например, текст")
+								li 
+									button 
+										.filter_icon 
+											img(src="i/global/searchs.svg", alt="")
+										p Найти
+				.financeMap_carts 
+					#map
+				.financeMapn--grid 
+					ul.finance_grid
+						-for(i = 0; i < 16; i++) 
+							li.finance_item 
+								.finance_icon 
+									img(src="i/finance/finance.png", alt="")
+								.finance_content 
+									p Фонд микрокредитования Краснодарского края Фонд микрокредитования Краснодарского края
+									a(href="#") FMKK.RU

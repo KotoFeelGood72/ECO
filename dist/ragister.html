@@ -1,0 +1,501 @@
+
+<!--  Breadcrumb-->
+<!--  items - pages in array, e.g. (['Main page', 'News'])-->
+<!--  last - last active page in span, e.g. (['Main page', 'News'], 'News detail')--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" media="all" href="styles/main_global.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="section_in"> 
+        <div class="header_main--w"> 
+          <div class="header_main--top"> 
+            <div class="header_logo--w">
+              <div class="header_logo"><img src="i/global/logotype.svg" alt="Header logo website"></div>
+              <div class="header_logo--desc"> 
+                <p>Финансовое просвещение населения Краснодарского края</p>
+              </div>
+            </div>
+            <div class="header_burger"><img src="i/global/burger.svg" alt=""></div>
+            <div class="header_social--w"> 
+              <ul class="header_social"> 
+                <li> <a href="#"> <img src="i/global/tg.svg" alt=""></a></li>
+                <li> <a href="#"> <img src="i/global/youtube.svg" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="header_visual">
+              <button>
+                <div class="header_visual--icons"> <img src="i/global/visual.svg" alt=""></div>
+                <p>Версия для слабовидящих</p>
+              </button>
+            </div>
+            <ul class="header_info"> 
+              <li> <a href="#">+7 (861) 214-51-91</a></li>
+              <li> <a href="#">economy@krasnodar.ru</a></li>
+            </ul>
+            <div class="header_search"> 
+              <input type="search" name="search website" placeholder="Поиск по сайту">
+              <button> <img src="i/global/search.svg" alt=""></button>
+            </div>
+            <div class="header_account"> 
+              <button> 
+                <div class="header_account--icons"> <img src="i/global/user.svg" alt=""></div>
+                <p>Кабинет</p>
+              </button>
+            </div>
+          </div>
+          <div class="header_main--bottom"> 
+            <nav class="header_nav"> 
+              <ul> 
+                <li> <a href="#">Нормативные акты</a></li>
+                <li> <a href="#">Каталог финансовых организаций</a></li>
+                <li> <a href="#">Медиа</a></li>
+                <li> <a href="#">Календарь</a></li>
+                <li> <a href="#">Контакты</a></li>
+                <li> <a href="#">Помощь</a></li>
+                <li> <a href="#">Сервисы</a></li>
+                <li> <a href="#">Мониторинг показателей финансового рынка</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="base">
+        <section class="bread">
+          <div class="section_in">
+            <div class="bread_main">
+              <ul class="breadcrumb__list">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#" title="Главная">Главная</a></li>
+                <li class="breadcrumb__item"><span class="breadcrumb__link-current">Раздел</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="register"> 
+          <div class="section_in"> 
+            <div class="register_main--w">
+              <div class="register_main--content"> 
+                <div class="register_title"> 
+                  <h1>Регистрация</h1>
+                </div>
+                <ul class="register_form--head">
+                  <li class="active_tab" data-tab="form1">Юридическое лицо</li>
+                  <li data-tab="form2">Индивидуальный предприниматель</li>
+                  <li data-tab="form3">Физическое лицо</li>
+                </ul>
+                <div class="ragister_tabs">
+                  <ul class="register_form--list"> 
+                    <li class="register_form--item"> 
+                      <form>
+                        <div class="register_inform"> 
+                          <p>Информация о компании</p>
+                          <div class="register_group">
+                            <div class="register_input">
+                              <label for="inn">ИНН</label>
+                              <input type="text" name="inn" id="inn">
+                            </div>
+                            <div class="register_input">
+                              <label for="nameOrg">Наименование организации</label>
+                              <input type="text" name="nameOrg" id="nameOrg">
+                            </div>
+                            <div class="register_input">
+                              <label for="family">Фамилия ответственного лица</label>
+                              <input type="text" name="family" id="family">
+                            </div>
+                            <div class="register_input">
+                              <label for="namePeople">Имя ответственного лица</label>
+                              <input type="text" name="namePeople" id="namePeople">
+                            </div>
+                            <div class="register_input">
+                              <label for="fam">Отчество ответственного лица</label>
+                              <input type="text" name="fam" id="fam">
+                            </div>
+                            <div class="register_input">
+                              <label for="prof">Должность ответственного лица</label>
+                              <input type="text" name="prof" id="prof">
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <form>
+                        <div class="register_inform register_inform--user"> 
+                          <p>Информация о пользователе</p>
+                          <div class="register_group">
+                            <div class="register_input">
+                              <label for="phone">Телефон</label>
+                              <input type="tel" name="phone" id="phone">
+                            </div>
+                            <div class="register_input">
+                              <label for="E-mail">E-mail</label>
+                              <input type="email" name="E-mail" id="email">
+                            </div>
+                            <div class="register_input">
+                              <label for="pass">Пароль</label>
+                              <input type="password" name="pass" id="pass">
+                            </div>
+                            <div class="register_input">
+                              <label for="pass1">Повторите пароль</label>
+                              <input type="password" name="pass1" id="pass1">
+                            </div>
+                            <div class="register_input">
+                              <label for="fam1">Фамилия </label>
+                              <input type="text" name="fam1" id="fam1">
+                            </div>
+                            <div class="register_input">
+                              <label for="name2">Имя </label>
+                              <input type="text" name="name2" id="name2">
+                            </div>
+                            <div class="register_input">
+                              <label for="dad">Отчество  </label>
+                              <input type="text" name="dad" id="dad">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="register_all--btn"> 
+                          <ul> 
+                            <li> 
+                              <button type="submit">Зарегистрироваться</button>
+                            </li>
+                            <li> <a href="#">Восстановить пароль</a></li>
+                            <li> <a href="#">Войти</a></li>
+                          </ul>
+                        </div>
+                      </form>
+                    </li>
+                    <li class="register_form--item"> 
+                      <form>
+                        <div class="register_inform"> 
+                          <p>Информация о компании</p>
+                          <div class="register_group">
+                            <div class="register_input">
+                              <label for="inn">ИНН</label>
+                              <input type="text" name="inn" id="inn">
+                            </div>
+                            <div class="register_input">
+                              <label for="nameOrg">Наименование организации</label>
+                              <input type="text" name="nameOrg" id="nameOrg">
+                            </div>
+                            <div class="register_input">
+                              <label for="family">Фамилия ответственного лица</label>
+                              <input type="text" name="family" id="family">
+                            </div>
+                            <div class="register_input">
+                              <label for="namePeople">Имя ответственного лица</label>
+                              <input type="text" name="namePeople" id="namePeople">
+                            </div>
+                            <div class="register_input">
+                              <label for="fam">Отчество ответственного лица</label>
+                              <input type="text" name="fam" id="fam">
+                            </div>
+                            <div class="register_input">
+                              <label for="prof">Должность ответственного лица</label>
+                              <input type="text" name="prof" id="prof">
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <form>
+                        <div class="register_inform register_inform--user"> 
+                          <p>Информация о пользователе</p>
+                          <div class="register_group">
+                            <div class="register_input">
+                              <label for="phone">Телефон</label>
+                              <input type="tel" name="phone" id="phone">
+                            </div>
+                            <div class="register_input">
+                              <label for="E-mail">E-mail</label>
+                              <input type="email" name="E-mail" id="email">
+                            </div>
+                            <div class="register_input">
+                              <label for="pass">Пароль</label>
+                              <input type="password" name="pass" id="pass">
+                            </div>
+                            <div class="register_input">
+                              <label for="pass1">Повторите пароль</label>
+                              <input type="password" name="pass1" id="pass1">
+                            </div>
+                            <div class="register_input">
+                              <label for="fam1">Фамилия </label>
+                              <input type="text" name="fam1" id="fam1">
+                            </div>
+                            <div class="register_input">
+                              <label for="name2">Имя </label>
+                              <input type="text" name="name2" id="name2">
+                            </div>
+                            <div class="register_input">
+                              <label for="dad">Отчество  </label>
+                              <input type="text" name="dad" id="dad">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="register_all--btn"> 
+                          <ul> 
+                            <li> 
+                              <button type="submit">Зарегистрироваться</button>
+                            </li>
+                            <li> <a href="#">Восстановить пароль</a></li>
+                            <li> <a href="#">Войти</a></li>
+                          </ul>
+                        </div>
+                      </form>
+                    </li>
+                    <li class="register_form--item"> 
+                      <form>
+                        <div class="register_inform"> 
+                          <p>Информация о компании</p>
+                          <div class="register_group">
+                            <div class="register_input">
+                              <label for="inn">ИНН</label>
+                              <input type="text" name="inn" id="inn">
+                            </div>
+                            <div class="register_input">
+                              <label for="nameOrg">Наименование организации</label>
+                              <input type="text" name="nameOrg" id="nameOrg">
+                            </div>
+                            <div class="register_input">
+                              <label for="family">Фамилия ответственного лица</label>
+                              <input type="text" name="family" id="family">
+                            </div>
+                            <div class="register_input">
+                              <label for="namePeople">Имя ответственного лица</label>
+                              <input type="text" name="namePeople" id="namePeople">
+                            </div>
+                            <div class="register_input">
+                              <label for="fam">Отчество ответственного лица</label>
+                              <input type="text" name="fam" id="fam">
+                            </div>
+                            <div class="register_input">
+                              <label for="prof">Должность ответственного лица</label>
+                              <input type="text" name="prof" id="prof">
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <form>
+                        <div class="register_inform register_inform--user"> 
+                          <p>Информация о пользователе</p>
+                          <div class="register_group">
+                            <div class="register_input">
+                              <label for="phone">Телефон</label>
+                              <input type="tel" name="phone" id="phone">
+                            </div>
+                            <div class="register_input">
+                              <label for="E-mail">E-mail</label>
+                              <input type="email" name="E-mail" id="email">
+                            </div>
+                            <div class="register_input">
+                              <label for="pass">Пароль</label>
+                              <input type="password" name="pass" id="pass">
+                            </div>
+                            <div class="register_input">
+                              <label for="pass1">Повторите пароль</label>
+                              <input type="password" name="pass1" id="pass1">
+                            </div>
+                            <div class="register_input">
+                              <label for="fam1">Фамилия </label>
+                              <input type="text" name="fam1" id="fam1">
+                            </div>
+                            <div class="register_input">
+                              <label for="name2">Имя </label>
+                              <input type="text" name="name2" id="name2">
+                            </div>
+                            <div class="register_input">
+                              <label for="dad">Отчество  </label>
+                              <input type="text" name="dad" id="dad">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="register_all--btn"> 
+                          <ul> 
+                            <li> 
+                              <button type="submit">Зарегистрироваться</button>
+                            </li>
+                            <li> <a href="#">Восстановить пароль</a></li>
+                            <li> <a href="#">Войти</a></li>
+                          </ul>
+                        </div>
+                      </form>
+                    </li>
+                  </ul>
+                </div>
+                <div class="register_img"> <img src="i/global/register.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer"> 
+        <div class="section_in"> 
+          <div class="footer_main--w"> 
+            <div class="footer_main--head"> 
+              <div class="footer_main--brand"> 
+                <div class="header_logo"><img src="i/footer/logo.svg" alt="Header logo website"></div>
+                <div class="header_logo--desc"> 
+                  <p>Финансовое просвещение населения Краснодарского края</p>
+                </div>
+              </div>
+              <div class="footer_head--info"> 
+                <div class="footer_info--search header_search"> 
+                  <input type="search" name="search" placeholder="Поиск по сайту">
+                  <button> <img src="i/global/search.svg" alt=""></button>
+                </div>
+                <div class="header_account"> 
+                  <button> 
+                    <div class="header_account--icons"> <img src="i/global/user.svg" alt=""></div>
+                    <p>Кабинет</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="footer_main--body"> 
+              <div class="footer_main--nav"> 
+                <p>РАЗДЕЛЫ ПОРТАЛА</p>
+                <div class="footer_nav--w"> 
+                  <ul> 
+                    <li> <a href="#">Нормативные акты</a></li>
+                    <li> <a href="#">Каталог финансовых организаций</a></li>
+                    <li> <a href="#">Медиа</a></li>
+                  </ul>
+                  <ul> 
+                    <li> <a href="#">Календарь мероприятий</a></li>
+                    <li> <a href="#">Контакты</a></li>
+                    <li> <a href="#">Помощь</a></li>
+                  </ul>
+                  <ul> 
+                    <li> <a href="#">Сервисы</a></li>
+                    <li> <a href="#">Мониторинг показателей финансового рынка</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer_main--contact"> 
+                <div class="footer_contact--head"> 
+                  <p>КОНТАКТЫ</p>
+                  <button class="header_visual">
+                    <div class="header_visual--icons"> <img src="i/global/visual.svg" alt=""></div>
+                    <p>Версия для слабовидящих</p>
+                  </button>
+                </div>
+                <div class="footer_address"> 
+                  <p>350063, Краснодарский край, г. Краснодар, ул. Рашпилевская, 23 (5-6 этаж). <a href="#">Показать на карте.</a></p>
+                  <ul class="footer_numbersMails"> 
+                    <li> <a href="#">+7 (861) 214-51-91</a></li>
+                    <li> <a href="#">economy@krasnodar.ru</a></li>
+                  </ul>
+                </div>
+                <div class="footer_info--lists"> 
+                  <ul class="footer_numbersMails"> 
+                    <li> <a href="#">+7 (861) 214-51-91</a></li>
+                    <li> <a href="#">economy@krasnodar.ru</a></li>
+                  </ul>
+                  <ul class="footer_messenger"> 
+                    <li> <a href="#">
+                        <div class="footer_social--icons"> <img src="i/global/tg.svg" alt=""></div>
+                        <p>Наш канал в Telegram</p></a></li>
+                    <li> <a href="#">
+                        <div class="footer_social--icons"> <img src="i/global/youtube.svg" alt=""></div>
+                        <p>Наш канал в Youtube</p></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer_main--bottom"> 
+              <p>© 2022, Министерство экономики Краснодарского края. Все права защищены.</p><a href="#">Политика в области обработки персональных данных</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js"><\/script>')</script>
+    <script type="text/javascript">window.productionStatus = 'development';</script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=de0ee812-515f-4988-a580-639be65741a6&amp;lang=ru_RU"></script>
+    <script src="js/libs.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/jsCalendar.lang.ru.js"> </script>
+    <script src="js/main.js"></script>
+    <!-- Burger menu -->
+    <div class="burger"> 
+      <div class="burger_main"> 
+        <div class="burger_head"> 
+          <div class="burger_logo"> <img src="i/global/burgers.svg" alt="Header logo website"></div>
+          <div class="burger_close"> <img src="i/global/closes.svg" alt=""></div>
+        </div>
+        <div class="burger_body"> 
+          <div class="burger_visual"> 
+            <button class="header_visual">
+              <div class="header_visual--icons"> <img src="i/global/visual.svg" alt=""></div>
+              <p>Версия для слабовидящих</p>
+            </button>
+          </div>
+          <nav class="burger_nav"> 
+            <ul> 
+              <li> <a href="#">Нормативные акты</a></li>
+              <li> <a href="#">Каталог финансовых организаций</a></li>
+              <li> <a href="#">Медиа</a></li>
+              <li> <a href="#">Календарь</a></li>
+              <li> <a href="#">Контакты</a></li>
+              <li> <a href="#">Помощь</a></li>
+              <li> <a href="#">Сервисы</a></li>
+              <li> <a href="#">Мониторинг показателей финансового рынка</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="burger_bottom"> 
+          <div class="footer_info--search header_search"> 
+            <input type="search" name="search" placeholder="Поиск по сайту">
+            <button> <img src="i/global/search.svg" alt=""></button>
+          </div>
+          <div class="burger_bottom--interface"> 
+            <ul> 
+              <li> <a href="#"><img src="i/global/telegram.svg" alt=""></a></li>
+              <li> <a href="#"><img src="i/global/youtubse.svg" alt=""></a></li>
+            </ul>
+            <div class="header_account"> 
+              <button> 
+                <div class="header_account--icons"> <img src="i/global/user.svg" alt=""></div>
+                <p>Кабинет</p>
+              </button>
+            </div>
+          </div>
+          <ul class="footer_numbersMails"> 
+            <li> <a href="#">+7 (861) 214-51-91</a></li>
+            <li> <a href="#">economy@krasnodar.ru</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="close">
+      <div class="close_main"> 
+        <p>Проверьте правильность полей!</p>
+        <div class="close_icon">
+           <svg class="checkmark_close" class="test-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="3" stroke-dasharray="100"><circle class="close__circle" cx="26" cy="26" r="25" fill="none"/><path class="icon-path" id="check" d="M 15,15 L 32,33 M 32,15 L 15,33"></path></svg></div>
+      </div>
+    </div>
+    <div class="succes">
+      <div class="succes_main"> 
+        <p>Ваше сообщение успешно отправлено!</p>
+        <div class="succes_icon">
+           <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+        </div>
+      </div>
+    </div><svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<defs>
+<filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />    
+<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+<feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+</filter>
+</defs>
+</svg>
+  </body>
+</html>

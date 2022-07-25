@@ -1,0 +1,66 @@
+extends _layout
+
+block vars
+	- array = {body_class:'mod_background', layout_mod:'', sub_keywords:'', title_inner:'FINANCE'}
+block content_block
+	+bread(['Главная'], 'Раздел')
+	section.finance 
+		.section_in 
+			.finance_main.first_finance
+				.finance_main--head
+					.finance_head--title
+						h1!='Каталог финансовых организаций'
+					.finance_head--img 
+						img(src="i/finance/hero.png", alt="")
+				ul.finance_grid
+					-for(i = 0; i < 12; i++) 
+						li.finance_item 
+							.finance_icon 
+								img(src="i/finance/finance.png", alt="")
+							.finance_content 
+								p Фонд микрокредитования Краснодарского края Фонд микрокредитования Краснодарского края
+								a(href="#") FMKK.RU
+				.finance_main--bottom
+					.finance_wrapper--btn 
+						.normal_btn--more.finance_btn--blue 
+							a(href="#") Показать ещё
+						.normal_btn--more.finance_btn--green 
+							a(href="#") Показать на карте
+					.normal_list-var 
+						p Выводить:
+						ul 
+							li 
+								a(href="#") 10
+							li 
+								a(href="#") 50
+							li 
+								a(href="#") 100 
+			.finance_main.first_finance
+				.finance_main--head
+					.finance_head--twoTitle
+						h2 Каталог финансовых экспертов
+					.finance_head--img 
+						img(src="i/finance/hero_2.png", alt="")
+				ul.finance_grid
+					-for(i = 0; i < 12; i++) 
+						li.finance_item 
+							.finance_icon 
+								img(src="i/finance/finance.png", alt="")
+							.finance_content 
+								p Фонд микрокредитования Краснодарского края Фонд микрокредитования Краснодарского края
+								a(href="#") FMKK.RU
+				.finance_main--bottom 
+					.finance_wrapper--btn 
+						.normal_btn--more.finance_btn--blue 
+							a(href="#") Показать ещё
+						.normal_btn--more.finance_btn--green 
+							a(href="#") Показать на карте
+					.normal_list-var 
+						p Выводить:
+						ul 
+							li 
+								a(href="#") 10
+							li 
+								a(href="#") 50
+							li 
+								a(href="#") 100 
