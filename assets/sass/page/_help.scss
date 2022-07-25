@@ -12,9 +12,13 @@
 .help_main--headContent {
 	max-width: 108.3rem;
 	margin-right: 30rem;
+	@include bp($point_2) {
+		margin-right: 0;
+	}
 	p {
 		font-size: 1.4rem;
 		line-height: 2.4rem;
+
 	}
 }
 .help_main--title {
@@ -23,6 +27,9 @@
 }
 .help_main--headImg {
 	width: 17.6rem;
+	@include bp($point_2) {
+		display: none;
+	}
 }
 .help_form--w {
 	background: $white;
@@ -32,6 +39,9 @@
 }
 .help_form {
 	padding: 2.9rem 3.3rem 4.7rem 2.7rem;
+	@include bp($point_2) {
+		padding: 3rem 1.5rem;
+	}
 	ul {
 		@include flex-start;
 		flex-wrap: wrap;
@@ -42,6 +52,10 @@
 				margin-right: 2.8rem;
 				width: 100%;
 				width: 51.4rem;
+				@include bp($point_2) {
+					width: 100%;
+					margin-right: 0;
+				}
 			}
 			&:nth-child(3) {
 				margin-right: 0;
@@ -50,11 +64,27 @@
 				width: 100%;
 				@include textarea;
 				margin-bottom: 3rem;
+				@include bp($point_2) {
+					margin-bottom: 2rem;
+				}
+				label {
+					@include bp($point_2) {
+						font-size: 1.2rem;
+						margin-bottom: 1.2rem;
+					}
+				}
 				textarea {
 					height: 16.2rem;
+					@include bp($point_2) {
+						height: 10rem;
+					}
 				}
 			}
 			&:last-child {
+				@include bp($point_2) {
+					margin-bottom: 0;
+					width: 100%
+				}
 				button {
 					@include submit;
 				}
@@ -74,6 +104,9 @@
 .subm_main--headContent {
 	max-width: 108.3rem;
 	margin-right: 39rem;
+	@include bp($point_2) {
+		margin-right: 0;
+	}
 	p {
 		font-size: 1.4rem;
 		line-height: 2.4rem;
@@ -92,32 +125,56 @@
 		font-size: 4.8rem;
 		color: $white;
 		max-width: 35.8rem;
+		@include bp($point_2) {
+			font-size: 2.3rem;
+			line-height: 3rem;
+		}
 	}
 }
 .subm_main--headImg {
 	margin-top: 2.4rem;
 	width: 17.5rem;
+	@include bp($point_2) {
+		display: none;
+	}
 }
 .subm_form--w {
 	background: $white;
 	box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.06);
 	border-radius: 1.6rem;
 	margin-bottom: 18.8rem;
+	@include bp($point_2) {
+		margin-bottom: 8rem;
+	}
 }
 .subm_form {
 	padding: 2.9rem 3.3rem 4.7rem 2.7rem;
+	@include bp($point_2) {
+		padding: 3rem 1.5rem;
+	}
 	ul {
 		@include flex-space;
 		flex-wrap: wrap;
 		flex-direction: row;
 		li {
 			@include input;
+			@include bp($point_2) {
+				width: 100%;
+			}
 			&:first-child {
 				margin-right: 3rem;
+				@include bp($point_2) {
+					margin-right: 0;
+				}
 			}
 			&:nth-child(-n+2) {
 				flex: 0 0 49%;
 				margin-bottom: 3.7rem;
+				@include bp($point_2) {
+					flex: auto;
+					width: 100%;
+					margin-bottom: 2rem;
+				}
 			}
 			&:last-child {
 				button {

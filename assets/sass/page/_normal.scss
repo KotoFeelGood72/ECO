@@ -4,6 +4,9 @@
 }
 .normal_main--w {
 	margin-bottom: 21.8rem;
+	@include bp($point_2) {
+		margin-bottom: 0;
+	}
 	h1 {
 		display: inline;
     box-decoration-break: clone;
@@ -14,6 +17,10 @@
 		font-size: 4.8rem;
 		color: $white;
 		max-width: 35.8rem;
+		@include bp($point_2) {
+			font-size: 2.3rem;
+			line-height: 3rem;
+		}
 	}
 }
 .normal_main--head {
@@ -23,16 +30,36 @@
 	box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.06);
 	border-radius: 1.6rem;
 	margin: 6rem 0;
+	@include bp($point_2) {
+		margin: 5rem 0;
+	}
 	ul {
 		@include flex-start;
 		padding: 4.2rem 4.1rem 5.3rem 4.1rem;
 		align-items: flex-end;
+		@include bp($point_2) {
+			flex-direction: column;
+			padding: 1.5rem;
+		}
 		li {
+			.normal_filter--select {
+				@include bp($point_2) {
+					margin-bottom: 0!important;
+				}
+			}
+			@include bp($point_2) {
+				width: 100%;
+				margin-bottom: 2rem;
+			}
 			p {
 				font-size: 1.4rem;
 				color: $white;
 				font-family: $font_2;
 				margin-bottom: 1.9rem;
+				@include bp($point_2) {
+					margin-bottom: 1.3rem;
+					font-size: 1.2rem;
+				}
 			}
 			&:nth-child(2) {
 				.normal_filter--inputTxt {
@@ -61,10 +88,17 @@
 					@include flex-center;
 					min-width: 23.5rem;
 					height: 5.4rem;
+					@include bp($point_2) {
+						height: 5rem;
+						min-width: 100%;
+					}
 					p {
 						font-size: 2rem;
 						font-family: $font_3;
 						margin-bottom: 0;
+						@include bp($point_2) {
+							font-size: 1.4rem;
+						}
 					}
 					.filter_icon {
 						width: 1.5rem;
@@ -79,8 +113,15 @@
 
 .normal_filter--select {
 	margin-right: 2.1rem;
+	@include bp($point_2) {
+		margin-right: 0;
+		margin-bottom: 2rem;
+	}
 	.choices {
 		min-width: 31.2rem;
+		@include bp($point_2) {
+			min-width: 100%;
+		}
 	}
 	.choices__inner {
 		background-color: #DCEAF4;
@@ -90,6 +131,11 @@
 		border: none!important;
 		@include flex-start;
 		min-height: 5.4rem!important;
+		@include bp($point_2) {
+			font-size: 1.2rem!important;
+			padding-left: 2rem!important;
+			min-height: 5rem!important;
+		}
 		.choices__list--single {
 			padding: 0!important;
 			color: #00000099;
@@ -112,6 +158,9 @@
 }
 .normal_filter--inputTxt {
 	margin-right: 2.5rem;
+	@include bp($point_2) {
+		margin-right: 0;
+	}
 	input {
 		@include app;
 		background-color: #DCEAF4;
@@ -122,6 +171,12 @@
 		font-family: $font_2;
 		min-width: 31.1rem;
 		height: 5.4rem;
+		@include bp($point_2) {
+			min-width: 100%;
+			height: 5rem;
+			font-size: 1.2rem;
+			padding: 1.2rem 2rem 1.2rem 2rem;
+		}
 	}
 }
 .filter_icon {
@@ -137,6 +192,9 @@
 	border-radius: 1.6rem;
 	margin-bottom: 1.4rem;
 	padding: 3.3rem 3.3rem 3.5rem 4.2rem;
+	@include bp($point_2) {
+		padding: 2.5rem 1.5rem;
+	}
 	&:last-child {
 		margin-bottom: 0;
 	}
@@ -145,18 +203,34 @@
 		font-family: $font_2;
 		line-height: 3.3rem;
 		margin-bottom: 2.3rem;
+		@include bp($point_2) {
+			font-size: 1.4rem;
+			line-height: 2.4rem;
+			font-family: $font_2;
+			font-weight: 500;
+		}
 	}
 }
 .normal_item--head {
 }
 .normal_item--bottom {
 	@include flex-space;
+	@include bp($point_2) {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
 .norma_item--tags {
 	ul {
+		@include bp($point_2) {
+			margin-bottom: 2rem;
+		}
 		li {
 			font-size: 1.4rem;
 			margin-bottom: 0.8rem;
+			@include bp($point_2) {
+				font-size: 1.2rem;
+			}
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -173,9 +247,15 @@
 .normal_down--icons {
 	width: 3.8rem;
 	margin-right: 1.1rem;
+	@include bp($point_2) {
+		width: 2.5rem;
+	}
 }
 .normal_down--txt {
 	font-size: 1.4rem;
+	@include bp($point_2) {
+		font-size: 1.2rem;
+	}
 	&>a:first-child {
 		text-decoration: none;
 	}
@@ -183,6 +263,9 @@
 		font-family: $font_3;
 		margin-bottom: 0.7rem;
 		color: $black;
+		@include bp($point_2) {
+			margin-bottom: 0.3rem;
+		}
 	}
 	a {
 		color: $vio;
@@ -192,9 +275,17 @@
 }
 .normal_main--bottom {
 	@include flex-space;
+	@include bp($point_2) {
+		flex-direction: column;
+		align-items: flex-start
+	}
 }
 .normal_btn--more {
 	@include standart;
+	@include bp($point_2) {
+		width: 100%;
+		margin-bottom: 2rem;
+	}
 	a {
 		font-size: 1.4rem;
 		text-decoration: underline;
@@ -207,11 +298,24 @@
 		margin-right: 4.3rem;
 	}
 	ul {
+		@include flex-start;
 		li {
 			@include standart;
 			width: 6.5rem;
 			height: 6.5rem;
 			background-color: $green;
+			margin-right: 1.4rem;
+			@include bp($point_2) {
+				width: 3rem;
+				height: 3rem;
+				margin-right: 1.5rem;
+			}
+			&:last-child {
+				margin-right: 0;
+				@include bp($point_2) {
+					margin-right: 0;
+				}
+			}
 			a {
 				background-color: $green;
 				border-radius: 1.8rem;
@@ -221,6 +325,11 @@
 				height: 100%;
 				font-size: 1.4rem;
 				text-decoration: underline;
+				@include bp($point_2) {
+					font-size: 1.2rem;
+					border-radius: 0.5rem;
+					padding: 1rem 1.5rem;
+				}
 			}
 		}
 	}

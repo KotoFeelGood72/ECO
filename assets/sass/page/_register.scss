@@ -9,12 +9,18 @@
 }
 .register_title {
 	margin-bottom: 6.2rem;
+	@include bp($point_2) {
+		margin-bottom: 5rem;
+	}
 }
 
 .register_form--head {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
 	grid-gap: .5rem;
+	@include bp($point_2) {
+		grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+	}
 	li {
 		@include flex-center;
 		height: 6.9rem;
@@ -29,6 +35,11 @@
 		border-radius: 1.8rem 1.8rem 0 0;
 		z-index: 1;
 		position: relative;
+		@include bp($point_2) {
+			font-size: 1.4rem;
+			font-family: $font_2;
+			height: 6rem;
+		}
 		&:before {
 			position: absolute;
 			bottom: -3rem;
@@ -96,6 +107,9 @@
 }
 .register_form--list {
 	padding: 4.6rem 3rem 7.1rem 2.9rem;
+	@include bp($point_2) {
+		padding: 2.5rem 1.5rem;
+	}
 }
 .register_form--item {
 	@include flex-space;
@@ -111,6 +125,9 @@
 }
 .register_inform {
 	margin-bottom: 2.9rem;
+	@include bp($point_2) {
+		margin-bottom: 2rem;
+	}
 	&>p {
 		font-size: 2.6rem;
 		font-family: $font_3;
@@ -118,6 +135,10 @@
 		position: relative;
 		padding-bottom: 1.2rem;
 		margin-bottom: 4rem;
+		@include bp($point_2) {
+			font-size: 1.8rem;
+			line-height: 2.4rem;
+		}
 		&:before {
 			position: absolute;
 			bottom: 0;
@@ -140,8 +161,28 @@
 .register_all--btn {
 	ul {
 		@include flex-start;
+		@include bp($point_2) {
+			flex-direction: row;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
 		li {
 			margin-right: 6.8rem;
+			&:first-child {
+				@include bp($point_2) {
+					width: 100%;
+					margin-bottom: 2rem;
+				}
+			}
+			&:nth-child(2) {
+				@include bp($point_2) {
+					margin-right: 2rem;
+				}
+			}
+			@include bp($point_2) {
+				margin-right: 0;
+			}
 			&:last-child {
 				margin-right: 0;
 			}
@@ -150,6 +191,9 @@
 				font-size: 2rem;
 				font-family: $font_3;
 				text-decoration: underline;
+				@include bp($point_2) {
+					font-size: 1.2rem;
+				}
 				&:hover {
 					text-decoration: none
 				}
@@ -168,6 +212,10 @@
 	grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
 	grid-gap: 1.6rem;
 	margin-bottom: 3.5rem;
+	@include bp($point_2) {
+		margin-bottom: 2rem;
+		grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+	}
 }
 
 .register_group--body {
@@ -175,6 +223,11 @@
 	grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
 	grid-gap: 3.5rem 1.6rem;
 	margin-bottom: 3.5rem;
+	@include bp($point_2) {
+		grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+		grid-gap: 2rem;
+		margin-bottom: 2rem;
+	}
 }
 
 .register_inform--user {
@@ -183,6 +236,11 @@
 		grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
 		grid-gap: 1.6rem;
 		margin-bottom: 3.5rem;
+		@include bp($point_2) {
+			grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+			grid-gap: 2rem;
+			margin-bottom: 2rem;
+		}
 	}
 	
 	.register_group--body {
@@ -190,12 +248,21 @@
 		grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
 		grid-gap: 3.5rem 1.6rem;
 		margin-bottom: 3.5rem;
+		@include bp($point_2) {
+			grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+			grid-gap: 2rem;
+			margin-bottom: 2rem;
+		}
 	}
 
 	.register_group--bottom {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
 		grid-gap: 3.5rem 1.6rem;
+		@include bp($point_2) {
+			grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+			grid-gap: 2rem;
+		}
 	}
 
 	margin-bottom: 5.8rem;
@@ -203,6 +270,9 @@
 
 .register_check--all {
 	margin-bottom: 6.4rem;
+	@include bp($point_2) {
+		margin-bottom: 4rem;
+	}
 	ul {
 		li {
 			margin-bottom: 1.8rem;
@@ -220,6 +290,10 @@
 				cursor: pointer;
 				font-size: 1.4rem;
 				transition: all .3s ease;
+				@include bp($point_2) {
+					display: inline-block;
+					font-size: 1rem;
+				}
 				a {
 					color: $vio;
 					text-decoration: underline;
@@ -251,6 +325,9 @@
 					transform: translateY(-50%) scaleX(0);
 					left: .5rem;
 					transition: all .3s ease;
+					@include bp($point_2) {
+						top: 23%;
+					}
 				}
 			}
 		}

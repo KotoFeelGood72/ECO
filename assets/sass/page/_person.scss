@@ -4,9 +4,15 @@
 }
 .person_main--w {
 	margin-bottom: 23.1rem;
-}
+	@include bp($point_2) {
+		margin-bottom: 8rem;
+	}
+} 
 .person_title {
 	margin-bottom: 6.2rem;
+	@include bp($point_2) {
+		margin-bottom: 5rem;
+	}
 }
 .person_main--tab {
 }
@@ -28,6 +34,11 @@
 		box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.06);
 		border-radius: 1.8rem;
 		z-index: 1;
+		@include bp($point_2) {
+			font-size: 1.2rem;
+			height: 5rem;
+			font-family: $font_2;
+		}
 		&:nth-child(2) {
 			border-radius: 1.8rem;
 		}
@@ -73,6 +84,9 @@
 	@include flex-space;
 	align-items: flex-start;
 	width: 100%;
+	@include bp($point_2) {
+		padding: 2.5rem 1.5rem;
+	}
 }
 .person_tab--content {
 	width: 100%;
@@ -85,6 +99,10 @@
 		position: relative;
 		padding-bottom: 1.2rem;
 		margin-bottom: 3.7rem;
+		@include bp($point_2) {
+			font-size: 1.8rem;
+			line-height: 2.8rem;
+		}
 		&:before {
 			position: absolute;
 			bottom: 0;
@@ -109,6 +127,9 @@
 
 .person_tab--img {
 	width: 42rem;
+	@include bp($point_2) {
+		display: none;
+	}
 	img {
 		object-fit: cover;
 	}
@@ -123,14 +144,24 @@
 		@include input;
 		margin-right: 1rem;
 		margin-bottom: 3.5rem;
+		@include bp($point_2) {
+			margin-right: 0;
+			margin-bottom: 2rem;
+		}
 		&:nth-child(-n+4) {
 			width: 49.5%;
+			@include bp($point_2) {
+				width: 100%;
+			}
 		}
 		&:nth-child(5),
 		&:nth-child(6),
 		&:nth-child(7) {
 			width: 32.5%;
 			// flex-grow: 1;
+			@include bp($point_2) {
+				width: 100%;
+			}
 		}
 		&:nth-child(2),
 		&:nth-child(4),
@@ -141,6 +172,9 @@
 		&:nth-child(8),
 		&:nth-child(9) {
 			width: 49.5%;
+			@include bp($point_2) {
+				width: 100%;
+			}
 		}
 	}
 }
@@ -164,11 +198,30 @@
 	flex-wrap: wrap;
 	max-width: 105.6rem;
 	margin-bottom: 5rem;
+	@include bp($point_2) {
+		justify-content: space-between;
+		margin-bottom: 3rem;
+	}
 	li {
 		margin-bottom: 2.5rem;
 		margin-right: 4rem;
 		max-width: 21.4rem;
 		width: 100%;
+		@include bp($point_2) {
+			margin-bottom: 2rem;
+		}
+		&:nth-child(n+1) {
+			@include bp($point_2) {
+				margin-right: 2rem;
+			}
+		}
+		@include bp($point_2) {
+			max-width: 100%;
+			margin-right: 0;
+			margin-bottom: 2rem;
+			display: inline-flex;
+			width: auto;
+		}
 		input {
 			display: none;
 			&:checked + label:after {
@@ -182,6 +235,10 @@
 			cursor: pointer;
 			font-size: 1.4rem;
 			transition: all .3s ease;
+			@include bp($point_2) {
+				font-size: 1.2rem;
+				display: inline-flex;
+			}
 			&:before {
 				position: absolute;
 				top: 0;
@@ -212,10 +269,16 @@
 .user_theme--item {
 }
 .person_save--btn {
+	@include bp($point_2) {
+		width: 100%
+	}
 	button {
 		@include submit;
 		display: inline-flex;
 		max-width: 24.4rem;
+		@include bp($point_2) {
+			max-width: 100%;
+		}
 	}
 }
 .person_list--events {
@@ -224,6 +287,9 @@
 		border: .1rem solid $vio;
 		padding: 3.3rem 3.7rem 2.9rem 4rem;
 		margin-bottom: 1.5rem;
+		@include bp($point_2) {
+			padding: 2.5rem 1.5rem;
+		}
 		&:last-child {
 			margin-bottom: 0;
 		}
@@ -235,6 +301,12 @@
 		font-family: $font_2;
 		margin-bottom: 2.7rem;
 		line-height: 3.3rem;
+		@include bp($point_2) {
+			font-size: 1.2rem;
+			line-height: 2.2rem;
+			margin-bottom: 2rem;
+			font-family: $font_2;
+		}
 	}
 }
 .person_eventsItem--bottom {
@@ -243,6 +315,10 @@
 		margin-bottom: 0;
 		font-family: $font_1;
 		font-size: 1.4rem;
+		@include bp($point_2) {
+			font-size: 1.2rem;
+			margin-right: 2rem;
+		}
 		a {
 			color: $vio;
 			text-decoration: underline;
@@ -258,12 +334,19 @@
 		font-size: 1.4rem;
 		color: $vio;
 		font-family: $font_4;
+		@include bp($point_2) {
+			font-size: 1.2rem;
+			font-family: $font_2;
+		}
 	}
 }
 .person_eventsItem--icons {
 	margin-right: 0.8rem;
 	width: 2.5rem;
-}
+	@include bp($point_2) {
+		width: 1.5rem;
+	}
+ }
 
 
 
@@ -276,15 +359,28 @@
 		@include flex-start;
 		padding-bottom: 2.2rem;
 		margin-bottom: 1.5rem;
+		@include bp($point_2) {
+			justify-content: space-between;
+			padding-bottom: 1rem;
+		}
 		li {
 			font-size: 1.4rem;
 			font-family: $font_2;
 			text-transform: uppercase;
+			@include bp($point_2) {
+				font-size: .8rem;
+			}
 			&:first-child {
 				margin-right: 48.3rem;
+				@include bp($point_2) {
+					margin-right: 1rem;
+				}
 			}
 			&:nth-child(2) {
 				margin-right: 16.4rem;
+				@include bp($point_2) {
+					margin-right: 0;
+				}
 			}
 		}
 		position: relative;
@@ -310,21 +406,40 @@
 		border-bottom: .1rem solid #E0E0E0;
 		padding-bottom: 1.5rem;
 		margin-bottom: 1.5rem;
+		@include bp($point_2) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
 		li {
+			@include bp($point_2) {
+				margin-bottom: 1rem;
+				font-size: 1.4rem;
+			}
 			&:first-child {
 				max-width: 29.5rem;
 				width: 100%;
 				margin-right: 27rem;
+				@include bp($point_2) {
+					margin-right: 0;
+				}
 			}
 			&:nth-child(2) {
 				max-width: 29.5rem;
 				width: 100%;
 				margin-right: 8.2rem;
+				@include bp($point_2) {
+					margin-right: 0;
+
+				}
 			}
 			&:nth-child(3) {
 				max-width: 29.5rem;
 				width: 100%;
 				margin-right: 18.1rem;
+				@include bp($point_2) {
+					margin-right: 0;
+
+				}
 			}
 			&:last-child {
 				flex-grow: 1;
@@ -335,6 +450,9 @@
 
 .mod_report {
 	margin-left: -2.2rem;
+	@include bp($point_2) {
+		margin-left: 0;
+	}
 }
 
 .btns {

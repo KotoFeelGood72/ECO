@@ -4,6 +4,9 @@
 }
 .bread_main {
 	margin: 4.1rem 0;
+	@include bp($point_2) {
+		margin: 2rem 0 3rem 0;
+	}
 }
 .breadcrumb__list {
 	@include flex-start;

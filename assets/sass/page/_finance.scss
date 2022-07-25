@@ -4,6 +4,9 @@
 }
 .finance_head--title {
 	max-width: 55rem;
+	@include bp($point_2) {
+		margin-bottom: 3rem;
+	}
 }
 
 .finance_main {
@@ -12,6 +15,7 @@
 
 .finance_head--twoTitle {
 	max-width: 55rem;
+
 	h2 {
 		display: inline;
     box-decoration-break: clone;
@@ -22,12 +26,22 @@
 		font-size: 4.8rem;
 		color: $white;
 		max-width: 35.8rem;
+		@include bp($point_2) {
+			font-size: 2.3rem;
+			line-height: 3rem;
+		}
 	}
 }
 .first_finance {
 	margin-bottom: 14.6rem;
+	@include bp($point_2) {
+		margin-bottom: 8rem;
+	}
 	.finance_head--img {
 		width: 23.4rem;
+		@include bp($point_2) {
+			width: 15rem;
+		}
 	}
 	.finance_main--head {
 		margin-bottom: 5rem;
@@ -36,6 +50,9 @@
 .finance_main--head {
 	@include flex-space;
 	margin-bottom: 4.4rem;
+	@include bp($point_2) {
+		align-items: flex-start;
+	}
 }
 .finance_head--img {
 	width: 27.8rem;
@@ -45,11 +62,19 @@
 	grid-template-columns: repeat(auto-fill, minmax(39rem , 1fr));
 	grid-gap: 3.5rem 2rem;
 	margin-bottom: 6.4rem;
-	li {
+	@include bp($point_2) {
+		grid-template-columns: repeat(auto-fill, minmax(100% , 1fr));
+		grid-gap: 2rem;
+		margin-bottom: 5rem;
+	}
+	li { 
 		background: #FFFFFF;
 		box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.06);
 		border-radius: 1.6rem;
 		padding: 3.2rem 3.1rem 3.3rem 4.1rem;
+		@include bp($point_2) {
+			padding: 3rem 1.5rem 1.5rem 1.5rem;
+		}
 		p {
 			font-size: 1.4rem;
 			margin-bottom: 3rem;
@@ -66,33 +91,51 @@
 .finance_icon {
 	width: 6.3rem;
 	margin-bottom: 3.5rem;
+	@include bp($point_2) {
+		width: 4rem;
+	}
 }
 .finance_content {
 }
 .finance_main--bottom {
 	@include flex-space;
+	@include bp($point_2) {
+		flex-direction: column;
+	}
 }
 .normal_btn {
 }
 .finance_btn--blue {
 	height: 6.5rem;
+	@include bp($point_2) {
+		height: 100%
+	}
 	a {
 		@include flex-center;
 		height: 100%;
 		width: 100%;
 		padding-left: 5.3rem;
 		padding-right: 5.3rem;
+		@include bp($point_2) {
+			padding: 1.4rem 2rem;
+		}
 	}
 }
 .finance_btn--green {
 	background-color: $green;
 	height: 6.5rem;
+	@include bp($point_2) {
+		height: 100%
+	}
 	a {
 		@include flex-center;
 		height: 100%;
 		width: 100%;
 		padding-left: 5.3rem;
 		padding-right: 5.3rem;
+		@include bp($point_2) {
+			padding: 1.4rem 2rem;
+		}
 	}
 }
 .normal_list-var {
@@ -100,16 +143,27 @@
 
 .financeMap_main--w {
 	margin-bottom: 30.9rem;
-	.finance_grid {
+	@include bp($point_2) {
+		margin-bottom: 8rem;
+	}
+	.finance_grid { 
 		margin-bottom: 0;
 	}
 }
 
 .finance_head--top {
 	@include flex-space;
+	@include bp($point_2) {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 3rem;
+	}
 }
 
 .finance_headMap--number {
+	@include bp($point_2) {
+		@include flex-start;
+	}
 	h2 {
 		font-size: 9.6rem;
 		color: $vio;
@@ -121,10 +175,19 @@
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
 		text-fill-color: transparent;
+		@include bp($point_2) {
+			font-size: 5rem;
+			margin-right: 2rem;
+			line-height: 5.5rem;
+			margin-bottom: 0;
+		}
 	}
 	p {
 		font-size: 2rem;
 		font-family: $font_2;
+		@include bp($point_2) {
+			font-size: 1.6rem;
+		}
 	}
 }
 
@@ -133,5 +196,8 @@
 	#map {
 		height: 77.5rem;
 		width: 100%;
+		@include bp($point_2) {
+			height: 30rem;
+		}
 	}
 }

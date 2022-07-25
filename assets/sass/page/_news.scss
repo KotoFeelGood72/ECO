@@ -10,16 +10,34 @@
 		font-family: $font_3;
 		padding: .5rem .8rem;
 		margin-bottom: 3rem;
+		@include bp($point_2) {
+			padding: .3rem .7rem;
+			font-size: 1.2rem;
+			margin-bottom: 2rem;
+			line-height: 2rem;
+		}
+		p {
+			@include bp($point_2) {
+				line-height: 2rem!important;
+			}
+		}
 	}
 
 
 	.events_griditems--content {
 		p {
 			line-height: 3.3rem;
+			@include bp($point_2) {
+				line-height: 2.8rem;
+			}
 		}
 	}
 	.events_gridItems--buttons {
 		height: 6.5rem;
+		@include bp($point_2) {
+			height: 100%;
+			margin: 0;
+		}
 		a {
 			@include flex-center;
 			width: 100%;
@@ -28,6 +46,9 @@
 	}
 	.events_grid--itemsMain {
 		align-items: flex-start;
+		@include bp($point_2) {
+			margin-bottom: 0!important;
+		}
 	}
 	.normal_head--filter {
 		ul {

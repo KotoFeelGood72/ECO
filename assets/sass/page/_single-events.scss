@@ -15,46 +15,84 @@
 	@include flex-space;
 	align-items: flex-start;
 	margin-bottom: 20.4rem;
+	@include bp($point_2) {
+		flex-direction: column;
+		margin-bottom: 8rem;
+	}
 }
 .singleEvents_img {
 	margin-bottom: 4.7rem;
+	@include bp($point_2) {
+		margin-bottom: 2rem;
+	}
 }
 .singleEvents_main--contentsMod {
 	flex-direction: column;
 	max-width: 111.8rem;
 	margin-right: 4.4rem;
+	@include bp($point_2) {
+		margin-right: 0;
+	}
 }
 .singleEvents_text {
+	@include bp($point_2) {
+		margin-bottom: 3rem;
+	}
 	h2 {
 		font-size: 2.6rem;
 		line-height: 5rem;
 		margin-bottom: 4.4rem;
+		@include bp($point_2) {
+			font-size: 2rem;
+			line-height: 3rem;
+			margin-bottom: 2rem;
+		}
 	}
 	p {
 		font-size: 1.6rem;
 		line-height: 2.8rem;
+		@include bp($point_2) {
+			font-size: 1.4rem;
+			line-height: 2.4rem;
+		}
 	}
 }
 .singleEvents_sidebar {
 	.events_gridItems--icons {
 		width: 4.4rem!important;
 		margin-right: 3.3rem;
+		@include bp($point_2) {
+			display: none;
+		}
 	}
 	ul {
 		flex-direction: column;
 		align-items: flex-start;
+		@include bp($point_2) {
+			align-items: center;
+			flex-direction: row;
+		}
 		li {
 			border: none!important;
 			margin-bottom: 2rem;
+			@include bp($point_2) {
+				margin-bottom: 0;
+			}
 			&:last-child {
 				margin-bottom: 0;
 			}
 			span {
 				color: $white;
 				font-size: 1.6rem;
+				@include bp($point_2) {
+					font-size: 1.4rem;
+				}
 			}
 			p {
 				font-size: 1.4rem;
+				@include bp($point_2) {
+					font-size: 1rem;
+				}
 			}
 		}
 	}
@@ -65,6 +103,13 @@
 	border-radius: 1.6rem;
 	padding: 2rem 10rem 2.1rem 4.6rem;
 	margin-bottom: 1.6rem;
+	@include bp($point_2) {
+		margin-bottom: 0.5rem;
+		@include flex-center;
+		align-items: center;
+		padding: 2rem 1rem!important;
+		margin-bottom: 2rem;
+	}
 }
 .events_gridItems--icons {
 }
@@ -75,19 +120,31 @@
 	border-radius: 1.6rem;
 	padding: 4rem 10rem 4rem 4.6rem;
 	margin-bottom: 1.6rem;
+	@include bp($point_2) {
+		padding: 2rem;
+	}
 }
 .single_sidebarLocation--icons {
 	width: 5.6rem;
 	margin-right: 2.8rem;
+	@include bp($point_2) {
+		display: none;
+	}
 }
 .single_sidebarLocation--txt {
 	p {
 		font-size: 1.4rem;
+		@include bp($point_2) {
+			font-size: 1rem;
+		}
 	}
 	span {
 		font-size: 1.6rem;
 		color: $white;
 		font-family: $font_4;
+		@include bp($point_2) {
+			font-size: 1.4rem;
+		}
 	}
 }
 .single_sidebar--price {
@@ -98,19 +155,33 @@
 	margin-bottom: 1.6rem;
 	margin-bottom: 15.3rem;
 	border-radius: 1.6rem;
+	@include bp($point_2) {
+		padding: 2rem;
+		margin-bottom: 5rem;
+		
+	}
 }
 .single_sidebarPrice--icons {
 	width: 5rem;
 	margin-right: 3.1rem;
+	@include bp($point_2) {
+		width: 4rem;
+	}
 }
 .single_sidebarPrice--txt {
 	p {
 		font-size: 1.4rem;
+		@include bp($point_2) {
+			font-size: 1.2rem;
+		}
 	}
 	span {
 		color: $vio;
 		font-family: $font_4;
 		font-size: 1.6rem;
+		@include bp($point_2) {
+			font-size: 1.4rem;
+		}
 	}
 }
 .single_events--barOther {
@@ -121,6 +192,9 @@
 	border-radius: 1.6rem;
 	overflow: hidden;
 	margin-bottom: 2rem;
+	@include bp($point_2) {
+		width: 8rem;
+	}
 }
 .single_events--details {
 	margin-bottom: 3rem;
@@ -129,6 +203,9 @@
 		font-size: 2rem;
 		font-family: $font_4;
 		text-decoration: underline;
+		@include bp($point_2) {
+			font-size: 1.6rem;
+		}
 		&:hover {
 			text-decoration: none;
 		}
@@ -145,6 +222,11 @@
 		font-size: 2rem;
 		font-family: $font_4;
 		margin-bottom: 1rem;
+		@include bp($point_2) {
+			font-size: 1.6rem;
+			font-family: $font_2;
+			font-weight: 500;
+		}
 	}
 }
 .single_events--contacts {
@@ -183,6 +265,9 @@
 		text-align: center;
 		line-height: 2.2rem;
 		height: 6.5rem;
+		@include bp($point_2) {
+			font-size: 1.2rem;
+		}
 		&:hover {
 			text-decoration: none;
 		}
@@ -192,12 +277,21 @@
 
 .price_mods {
 	margin-bottom: 6.3rem;
+	@include bp($point_2) {
+		margin-bottom: 4rem;
+	}
 }
 
 .mod_body {
 	margin-bottom: 35.9rem;
+	@include bp($point_2) {
+		margin-bottom: 8rem;
+	}
 }
 
 .mod_contents {
 	margin-right: 8.7rem;
+	@include bp($point_2) {
+		margin-right: 0;
+	}
 }

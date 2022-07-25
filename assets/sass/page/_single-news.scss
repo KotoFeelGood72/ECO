@@ -8,23 +8,41 @@
 	font-family: $font_3;
 	display: inline-flex;
 	margin-bottom: 1.6rem;
+	@include bp($point_2) {
+		font-size: 1.2rem;
+	}
 }
 
 .single_news--title {
 	max-width: 101.7rem;
 	margin-bottom: 5rem;
+	@include bp($point_2) {
+		margin-bottom: 0;
+	}
 	h1 {
 		font-size: 2.8rem;
 		line-height: 3.2rem;
 		line-height: 4rem;
+		@include bp($point_2) {
+			font-size: 1.6rem;
+			line-height: 2.4rem;
+		}
 	}
 }
 
 .single_bottom--subtitle {
 	margin-bottom: 4.4rem;
+	@include bp($point_2) {
+		margin-bottom: 2rem;
+	}
 	h2 {
 		font-size: 1.8rem;
 		line-height: 3.3rem;
+		@include bp($point_2) {
+			font-size: 1.6rem;
+			line-height: 2.4rem;
+			font-family: $font_2;
+		}
 	}
 }
 
@@ -32,9 +50,16 @@
 	@include flex-start;
 	align-items: flex-start;
 	margin-bottom: 14.7rem;
+	@include bp($point_2) {
+		flex-direction: column;
+		margin-bottom: 8rem;
+	}
 }
 
 .single_newsBottom--content {
+	@include bp($point_2) {
+		margin-bottom: 2rem;
+	}
 	p {
 		font-size: 1.4rem;
 		line-height: 2.4rem;
@@ -43,12 +68,20 @@
 
 .single_news--main {
 	margin-right: 15rem;
+	@include bp($point_2) {
+		margin-right: 0;
+	}
 }
 
 .single_news--bar {
 	@include flex-start;
 	min-width: 46.1rem;
 	align-items: flex-start;
+	@include bp($point_2) {
+		min-width: 100%;
+		flex-direction: column;
+		margin-bottom: 8rem;
+	}
 }
 
 .single_news--img {
@@ -59,6 +92,13 @@
 	border-radius: 1.6rem;
 	overflow: hidden;
 	margin-right: 4.7rem;
+	@include bp($point_2) {
+		width: 8rem;
+		height: 8rem;
+		margin-bottom: 2rem;
+		margin-right: 0;
+		min-width: 8rem;
+	}
 	img {
 		object-fit: cover;
 	}
@@ -68,12 +108,20 @@
 	p {
 		font-size: 1.4rem;
 		margin-bottom: 3rem;
+		@include bp($point_2) {
+			margin-bottom: 2rem;
+		}
 	}
 	span {
 		font-size: 2rem;
 		font-family: $font_3;
 		display: flex;
 		margin-bottom: 3rem;
+		@include bp($point_2) {
+			margin-bottom: 2rem;
+			font-size: 1.6rem;
+			font-family: $font_2;
+		}
 	}
 	a {
 		font-size: 1.4rem;
@@ -104,6 +152,13 @@
 		justify-content: flex-end;
 		padding-left: 4.1rem;
 		margin-bottom: 7.2rem;
+		@include bp($point_2) {
+			height: 40rem;
+			justify-content: center;
+			align-items: center;
+			padding: 2rem;
+			margin-bottom: 3rem;
+		}
 	}
 	.single_news--imgs {
 		width: 100%;
@@ -118,10 +173,17 @@
 	.single_news--mainBottom {
 		@include flex-start;
 		align-items: flex-start;
+		@include bp($point_2) {
+			flex-direction: column;
+		}
 	}
 	.single_newsBottom--content {
 		margin-right: 11.7rem;
 		margin-bottom: 5.4rem;
+		@include bp($point_2) {
+			margin-right: 0;
+			margin-bottom: 3rem;
+		}
 		p {
 			margin-bottom: 5.4rem;
 		}
@@ -143,10 +205,17 @@
 		padding: 2.7rem 2.9rem 2.9rem 3.3rem;
 		margin-bottom: 1.4rem;
 		@include flex-space;
+		@include bp($point_2) {
+			padding: 1.5rem;
+			margin-bottom: 1rem;
+		}
 
 		.single_download--img {
 			width: 3.8rem;
 			margin-right: 1.6rem;
+			@include bp($point_2) {
+				width: 2rem;
+			}
 		}
 		&:last-child {
 			margin-bottom: 0;
@@ -155,11 +224,18 @@
 			font-size: 1.4rem;
 			color: $vio;
 			font-family: $font_2;
+			@include bp($point_2) {
+				font-size: 1.2rem;
+			}
 		}
 		p {
 			margin-bottom: 0!important;
 			font-size: 1.4rem;
 			font-family: $font_2;
+			@include bp($point_2) {
+				font-size: 1.2rem;
+				line-height: 1.8rem;
+			}
 		}
 	}
 }

@@ -1,12 +1,9 @@
-.events {
-}
-.section_in {
-}
-.events_main--w {
-}
 .events_main--function {
 	@include flex-start;
 	margin-bottom: 2.9rem;
+	@include bp($point_2) {
+		flex-direction: column;
+	}
 
 
 	.event_calendar {
@@ -16,12 +13,18 @@
 .events_head--title {
 	max-width: 52.9rem;
 	margin-bottom: 8.1rem;
+	@include bp($point_2) {
+		margin-bottom: 5rem;
+	}
 }
 .events_mainfunction--content {
 	margin-right: 2.7rem;
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
+	@include bp($point_2) {
+		margin-right: 0;
+	}
 }
 .events_mainHead--filter {
 	background: $white;
@@ -29,9 +32,18 @@
 	padding: 2.9rem 3.6rem 4.5rem 2.7rem;
 	font-size: 1.4rem;
 	margin-bottom: 0;
+	@include bp($point_2) {
+		padding: 1.5rem;
+		margin-top: 0;
+		margin-bottom: 3rem;
+	}
 	p {
 		margin-bottom: 2rem;
 		font-family: $font_2;
+		@include bp($point_2) {
+			margin-bottom: 1.3rem;
+			font-size: 1.2rem;
+		}
 	}
 }
 .events_mainHead--group {
@@ -39,6 +51,9 @@
 	grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
 	grid-gap: 2.8rem;
 	margin-bottom: 2rem;
+	@include bp($point_2) {
+		grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+	}
 	.events_mainHead--input {
 		&:nth-child(2) {
 			margin-right: 0;
@@ -64,6 +79,9 @@
 	input {
 		width: 100%;
 		height: 5.4rem;
+		@include bp($point_2) {
+			height: 5rem;
+		}
 	}
 }
 .events_mainHead--input {
@@ -73,10 +91,20 @@
 .events_mainBottom--group {
 	@include flex-start;
 	align-items: flex-end;
+	@include bp($point_2) {
+		flex-direction: column;
+	}
 	.normal_filter--select {
 		flex-grow: 1;
+		@include bp($point_2) {
+			width: 100%;
+		}
 		.choices__inner {
 			padding-left: 3.3rem;
+			@include bp($point_2) {
+				min-width: 100%;
+				border-radius: .8rem;
+			}
 		}
 	}
 }
@@ -85,6 +113,9 @@
 .mod_select {
 }
 .events_mainBottom--btn {
+	@include bp($point_2) {
+		width: 100%;
+	}
 	button {
 		background: linear-gradient(180deg, #41D79F 0%, #29C4A5 100%);
 		border-radius: .8rem;
@@ -92,10 +123,17 @@
 		@include flex-center;
 		min-width: 23.5rem;
 		height: 5.4rem;
+		@include bp($point_2) {
+			height: 5rem;
+			min-width: 100%;
+		}
 		p {
 			font-size: 2rem;
 			font-family: $font_3;
 			margin-bottom: 0;
+			@include bp($point_2) {
+				font-size: 1.4rem;
+			}
 		}
 		.filter_icon {
 			width: 1.5rem;
@@ -110,6 +148,9 @@
 }
 .events_mainGrid--w {
 	margin-bottom: 21.3rem;
+	@include bp($point_2) {
+		margin-bottom: 10rem;
+	}
 	.events_gridItems--info {
 		background: transparent;
 		box-shadow: none;
@@ -117,6 +158,9 @@
 }
 .events_mainGrid {
 	margin-bottom: 7.6rem;
+	@include bp($point_2) {
+		margin-bottom: 5rem;
+	}
 }
 .events_grid--itemsWrapper {
 	background: $white;
@@ -124,30 +168,54 @@
 	border-radius: 1.6rem;
 	padding: 5.2rem 4.6rem 5.5rem 4.2rem;
 	margin-bottom: 2.8rem;
+	@include bp($point_2) {
+		padding: 2.5rem 1.5rem;
+	}
 	&:last-child {
 		margin-bottom: 0;
 	}
 }
 .events_grid--itemsMain {
 	@include flex-space;
+	@include bp($point_2) {
+		flex-direction: column;
+		margin-bottom: 2rem!important;
+	}
 }
 .events_griditems--content {
 	// margin-bottom: 4.1rem;
+	@include bp($point_2) {
+		order: 1;
+		margin-right: 0!important;
+	}
 	&>p {
 		font-size: 1.8rem;
 		font-family: $font_2;
 		margin-bottom: 2rem;
+		@include bp($point_2) {
+			font-size: 1.4rem;
+		}
 	}
 	span {
 		font-size: 1.6rem;
 		display: flex;
 		margin-bottom: 4rem;
 		line-height: 2.8rem;
+		@include bp($point_2) {
+			font-size: 1.2rem;
+			line-height: 1.9rem;
+			margin-bottom: 2rem;
+		}
 	}
 }
 .events_gridItems--buttons {
 	@include standart;
 	background-color: transparent;
+	@include bp($point_2) {
+		flex-direction: column;
+		width: 100%;
+		margin: 1rem 0;
+	}
 	a:first-child {
 		font-size: 1.4rem;
 		background-color: transparent;
@@ -157,6 +225,11 @@
 		text-decoration: underline;
 		margin-right: 2rem;
 		transition: all .3s ease;
+		@include bp($point_2) {
+			margin-right: 0;
+			margin-bottom: 1rem;
+			padding: 1.2rem 2rem;
+		}
 		&:hover {
 			background-color: $vio;
 			color: $white;
@@ -171,6 +244,11 @@
 		text-decoration: underline;
 		transition: all .3s ease;
 		border: .2rem solid $vio;
+		@include bp($point_2) {
+			font-size: 1.2rem;
+			padding: 1.4rem 2rem;
+			height: 100%;
+		}
 		&:hover {
 			background-color: transparent;
 			color: $vio
@@ -181,32 +259,51 @@
 }
 .events_grid--itemBottom {
 	@include flex-space;
+	@include bp($point_2) {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 	p {
 		font-size: 1.4rem;
-		a {
+		@include bp($point_2) {
+			font-size: 1.2rem;
+			margin-bottom: 2rem;
+		}
+		a { 
 			color: $vio
 		}
 	}
 }
 .events_gridItems--info {
 	@include flex-start;
+	padding: 0!important;
 	ul {
 		@include flex-start;
 		li {
 			p {
 				font-size: 1.2rem;
 				margin-bottom: 0.3rem;
+				@include bp($point_2) {
+					font-size: 1rem;
+				}
 			}
 			span {
 				display: flex;
 				font-size: 1.4rem;
 				color: $vio;
 				font-family: $font_4;
+				@include bp($point_2) {
+					font-size: 1.2rem;
+				}
 			}
 			&:first-child {
 				padding-right: 2.5rem;
 				border-right: .1rem solid $vio;
 				margin-right: 1.9rem;
+				@include bp($point_2) {
+					margin-right: 1rem;
+					padding-right: 1.5rem;
+				}
 			}
 		}
 	}
@@ -214,6 +311,9 @@
 .events_gridItems--icons {
 	width: 3.1rem;
 	margin-right: 1.7rem;
+	@include bp($point_2) {
+		width: 2rem;
+	}
 }
 .events_griditems--img {
 	max-width: 38.7rem;
@@ -221,6 +321,10 @@
 	width: 100%;
 	border-radius: 1.6rem;
 	overflow: hidden;
+	@include bp($point_2) {
+		height: 25rem;
+		margin-bottom: 2rem;
+	}
 	img {
 		width: 100%;
 		height: 100%;

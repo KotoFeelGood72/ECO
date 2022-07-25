@@ -14,6 +14,10 @@
 		font-size: 4.8rem;
 		color: $white;
 		max-width: 35.8rem;
+		@include bp($point_2) {
+			font-size: 2.3rem;
+			line-height: 3rem;
+		}
 	}
 }
 .material_main--head {
@@ -22,8 +26,14 @@
 		margin-top: 8rem;
 		margin-bottom: 0;
 		background: $white;
+		@include bp($point_2) {
+			margin-top: 5rem;
+		}
 		ul {
 			padding: 2.9rem 4.1rem 6.6rem 4.1rem;
+			@include bp($point_2) {
+				padding: 2.5rem 1.5rem;
+			}
 		}
 		li {
 			&>p {
@@ -54,6 +64,10 @@
 	grid-template-columns: repeat(auto-fill, minmax(53.7rem, 1fr));
 	grid-gap: 2.4rem;
 	margin-bottom: 4.6rem;
+	@include bp($point_2) {
+		grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+		grid-gap: 3rem;
+	}
 	li {
 		position: relative;
 		&:before {
@@ -72,6 +86,9 @@
 			transition: all .3s ease;
 			pointer-events: none;
 			max-height: 47.1rem;
+			@include bp($point_2) {
+				max-height: 30rem;
+			}
 		}
 		&:hover {
 			&:before {
@@ -90,6 +107,9 @@
 				align-items: flex-start;
 				padding: 5.4rem 10.2rem 5.2rem 4.6rem;
 				max-height: 47.1rem;
+				@include bp($point_2) {
+					padding: 2rem;
+				}
 				.material_item--name {
 					max-width: 100%;
 					order: 2;
@@ -98,6 +118,10 @@
 						color: $white;
 						font-family: $font_3;
 						line-height: 3.7rem;
+						@include bp($point_2) {
+							font-size: 1.6rem;
+							line-height: 2.2rem;
+						}
 					}
 				}
 				.material_item--date {
@@ -111,6 +135,9 @@
 					left: 4.6rem;
 					visibility: visible;
 					opacity: 1;
+					@include bp($point_2) {
+						left: 2rem;
+					}
 				}
 			}
 		}
@@ -124,6 +151,9 @@
 	border-radius: 1.6rem;
 	overflow: hidden;
 	margin-bottom: 1rem;
+	@include bp($point_2) {
+		height: 30rem;
+	}
 	img {
 		width: 100%;
 		height: 100%;
@@ -168,6 +198,11 @@
 	grid-template-columns: repeat(auto-fill, minmax(81rem, 1fr));
 	grid-gap: 2.1rem;
 	margin-bottom: 2.8rem;
+	@include bp($point_2) {
+		grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+		margin-bottom: 3rem;
+		grid-gap: 3rem;
+	}
 	.material_item--img {
 		margin-bottom: 2.6rem;
 	}
@@ -177,6 +212,9 @@
 		.material_item--img {
 			height: 58.3rem;
 			position: relative;
+			@include bp($point_2) {
+				height: 30rem;
+			}
 		}
 		&:before {
 			position: absolute;
@@ -195,6 +233,9 @@
 			pointer-events: none;
 			transition: all .3s ease;
 			z-index: 2;
+			@include bp($point_2) {
+				max-height: 30rem;
+			}
 		}
 		&:hover {
 			&:before {
@@ -220,6 +261,10 @@
 	transition: all .3s ease;
 	opacity: 0;
 	visibility: hidden;
+	@include bp($point_2) {
+		width: 7rem;
+		height: 7rem;
+	}
 	&:hover {
 		opacity: .7;
 	}
@@ -229,6 +274,10 @@
 	grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
 	grid-gap: 2.1rem;
 	margin-bottom: 4.4rem;
+	@include bp($point_2) {
+		grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+		grid-gap: 3rem;
+	}
 	.material_big--item {
 		position: relative;
 		&:before {
@@ -248,6 +297,9 @@
 			pointer-events: none;
 			transition: all .3s ease;
 			z-index: 2;
+			@include bp($point_2) {
+				max-height: 30rem;
+			}
 		}
 		&:hover {
 			&:before {
@@ -264,6 +316,9 @@
 		.material_item--img {
 			height: 84.5rem;
 			position: relative;
+			@include bp($point_2) {
+				height: 30rem;
+			}
 		}
 	}
 }
@@ -271,6 +326,10 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(39.8rem, 1fr));
 	grid-gap: 4.5rem 2rem;
+	@include bp($point_2) {
+		grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+		grid-gap: 3rem;
+	}
 	li {
 		position: relative;
 		 &:nth-child(2),
@@ -292,6 +351,9 @@
 				pointer-events: none;
 				max-height: 37.5rem;
 				z-index: 2;
+				@include bp($point_2) {
+					max-height: 30rem;
+				}
 			}
 			&:hover {
 				&:before {
@@ -310,6 +372,9 @@
 					align-items: flex-start;
 					padding: 5.4rem 9rem 5.4rem 4.6rem;
 					max-height: 37.5rem;
+					@include bp($point_2) {
+						max-height: 30rem;
+					}
 					.material_item--name {
 						max-width: 100%;
 						order: 2;
@@ -318,6 +383,10 @@
 							color: $white;
 							font-family: $font_3;
 							line-height: 3.7rem;
+							@include bp($point_2) {
+								font-size: 1.6rem;
+								line-height: 2.2rem;
+							}
 						}
 					}
 					.material_item--date {
@@ -354,6 +423,9 @@
 				pointer-events: none;
 				transition: all .3s ease;
 				z-index: 2;
+				@include bp($point_2) {
+					max-height: 30rem;
+				}
 			}
 			&:hover {
 				&:before {
@@ -372,14 +444,23 @@
 		height: 37.5rem;
 		position: relative;
 		z-index: 1;
+		@include bp($point_2) {
+			height: 30rem;
+		}
 	}
 }
 .materialBottom_grid--w {
 	margin-bottom: 6.3rem;
+	@include bp($point_2) {
+		margin-bottom: 5rem;
+	}
 }
 .material_bottom--grid {
 	@include flex-start;
 	align-items: flex-start;
+	@include bp($point_2) {
+		flex-direction: column;
+	}
 	li {
 		&:nth-child(1) {
 			min-width: 53.9rem;
@@ -387,6 +468,11 @@
 			flex-grow: 0;
 			margin-right: 2.1rem;
 			position: relative;
+			@include bp($point_2) {
+				width: 100%;
+				min-width: 100%;
+				margin-bottom: 3rem;
+			}
 			&:before {
 				position: absolute;
 				top: 0;
@@ -404,6 +490,9 @@
 				pointer-events: none;
 				max-height: 47.1rem;
 				z-index: 2;
+				@include bp($point_2) {
+					max-height: 30rem;
+				}
 			}
 			&:hover {
 				&:before {
@@ -422,6 +511,10 @@
 					align-items: flex-start;
 					padding: 5.4rem 9rem 5.4rem 4.6rem;
 					max-height: 47.1rem;
+					@include bp($point_2) {
+						max-height: 30rem;
+						padding: 2rem;
+					}
 					.material_item--name {
 						max-width: 100%;
 						order: 2;
@@ -430,6 +523,10 @@
 							color: $white;
 							font-family: $font_3;
 							line-height: 3.7rem;
+							@include bp($point_2) {
+								font-size: 1.6rem;
+								line-height: 2.2rem;
+							}
 						}
 					}
 					.material_item--date {
@@ -443,6 +540,9 @@
 						left: 4.6rem;
 						visibility: visible;
 						opacity: 1;
+						@include bp($point_2) {
+							left: 2rem;
+						}
 					}
 				}
 			}
@@ -466,6 +566,9 @@
 				pointer-events: none;
 				transition: all .3s ease;
 				z-index: 2;
+				@include bp($point_2) {
+					max-height: 30rem;
+				}
 			}
 			&:hover {
 				&:before {
@@ -483,6 +586,9 @@
 		flex-grow: 1;
 		.material_item--img {
 			height: 47.1rem;
+			@include bp($point_2) {
+				height: 30rem;
+			}
 		}
 	}
 }

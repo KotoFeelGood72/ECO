@@ -20,6 +20,11 @@
 .policy-title {
 	max-width: 90rem;
 	margin-bottom: 5rem;
+	h1 {
+		@include bp($point_2) {
+			line-height: 3.5rem;
+		}
+	}
 }
 .policy_list>li {
 	margin-bottom: 5rem;

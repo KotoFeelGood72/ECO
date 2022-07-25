@@ -6,16 +6,25 @@
 	@include flex-space;
 	align-items: flex-start;
 	margin-bottom: 9.6rem;
+	@include bp($point_2) {
+		margin-bottom: 8rem;
+	}
 }
 .contacts_content {
 }
 .contacts_title {
 	max-width: 36.2rem;
 	margin-bottom: 6.2rem;
+	@include bp($point_2) {
+		margin-bottom: 5rem;
+	}
 }
 .contacts_list {
 	@include flex-start;
 	align-items: flex-start;
+	@include bp($point_2) {
+		flex-direction: column;
+	}
 	&li>p {
 		font-size: 2.6rem;
 		font-family: $font_3;
@@ -27,15 +36,29 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
+	@include bp($point_2) {
+		min-height: 100%;
+		margin-bottom: 3rem;
+	}
 	&:first-child {
 		margin-right: 4.9rem;
 		max-width: 37.2rem;
+		@include bp($point_2) {
+			margin-right: 0;
+		}
 	}
 	&:nth-child(2) {
 		margin-right: 14.3rem;
+		@include bp($point_2) {
+			margin-right: 0;
+		}
 	}
 	&:last-child {
 		margin-right: -4rem;
+		@include bp($point_2) {
+			margin-right: 0;
+			margin-bottom: 0;
+		}
 		a {
 			color: $vio;
 			text-decoration: underline;
@@ -49,6 +72,11 @@
 		position: relative;
 		margin-bottom: 2.5rem;
 		line-height: 5rem;
+		@include bp($point_2) {
+			font-size: 2rem;
+			margin-bottom: 2rem;
+			padding-bottom: 0;
+		}
 		&:before {
 			position: absolute;
 			bottom: 0;
@@ -58,6 +86,9 @@
 			background: linear-gradient(180deg, #5E93FE 0%, #8E6CFD 100%);
 			border-radius: .3rem;
 			content: '';
+			@include bp($point_2) {
+				width: 3rem;
+			}
 		}
 	}
 .contacts_timework {
@@ -68,6 +99,11 @@
 		position: relative;
 		margin-bottom: 2.5rem;
 		line-height: 5rem;
+		@include bp($point_2) {
+			font-size: 2rem;
+			margin-bottom: 2rem;
+			padding-bottom: 0;
+		}
 		&:before {
 			position: absolute;
 			bottom: 0;
@@ -77,6 +113,9 @@
 			background: linear-gradient(180deg, #5E93FE 0%, #8E6CFD 100%);
 			border-radius: .3rem;
 			content: '';
+			@include bp($point_2) {
+				width: 3rem;
+			}
 		}
 	}
 
@@ -87,6 +126,10 @@
 			margin-bottom: 0;
 			margin-right: 5.1rem;
 			font-size: 1.6rem;
+			@include bp($point_2) {
+				margin-right: 0;
+				font-size: 1.4rem;
+			}
 			p {
 				margin-bottom: 0.7rem;
 			}
@@ -98,6 +141,11 @@
 }
 	ul {
 		margin-bottom: 3.6rem;
+		@include bp($point_2) {
+			@include flex-start;
+			flex-direction: column;
+			align-items: flex-start;
+		}
 		li {
 			margin-bottom: 3.8rem;
 			&:last-child {
@@ -107,10 +155,16 @@
 				font-size: 1.6rem;
 				font-family: $font_3;
 				margin-bottom: 0.5rem;
+				@include bp($point_2) {
+					font-size: 1.4rem;
+				}
 			}
 			span {
 				display: flex;
 				font-size: 1.6rem;
+				@include bp($point_2) {
+					font-size: 1.4rem;
+				}
 			}
 		}
 	}
@@ -135,13 +189,22 @@
 }
 .contacts_img {
 	width: 49.9rem;
+	@include bp($point_2) {
+		display: none;
+	}
 }
 .contacts_map {
 	width: 100%;
 	border-radius: 1.6rem;
 	overflow: hidden;
 	margin-bottom: 13.4rem;
+	@include bp($point_2) {
+		margin-bottom: 8rem;
+	}
 	#maps {
 		height: 77.5rem;
+		@include bp($point_2) {
+			height: 30rem;
+		}
 	}
 }

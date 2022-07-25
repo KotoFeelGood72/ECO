@@ -326,7 +326,25 @@ var galleryThumbs = new Swiper('.singleMaterial_thumbslider', {
 	touchRatio: 0.2,
 	slideToClickedSlide: true,
 	loop: true,
-	loopedSlides: 12
+	loopedSlides: 12,
+	breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 3,
+      spaceBetween: 14,
+			loopedSlides: 12,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+			spaceBetween: 10,
+    },
+    // when window width is >= 640px
+    640: {
+			slidesPerView: 12,
+			spaceBetween: 10,
+    }
+  }
 });
 galleryTop.controller.control = galleryThumbs;
 galleryThumbs.controller.control = galleryTop;
