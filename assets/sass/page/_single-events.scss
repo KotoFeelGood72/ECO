@@ -111,6 +111,21 @@
 		margin-bottom: 2rem;
 	}
 }
+
+.mod_events--info {
+	padding: 2rem 10rem 2.1rem 4.6rem!important;
+	@include bp($point_2) {
+		padding: 2rem 1rem!important;
+	}
+	ul {
+		li {
+			margin-bottom: 1rem;
+			@include bp($point_2) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
 .events_gridItems--icons {
 }
 .single_sidebar--location {
