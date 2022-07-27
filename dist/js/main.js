@@ -136,9 +136,21 @@ $(document).ready(function() {
 		zeroFill : false,
 		monthFormat : "month ‘22",
 		dayFormat : "DD",
-		language : "ru"
+		language : "ru",
+		onDateRender: ((date, element, info) => {
+			if (!info.isCurrent && (date.getDay() == 0 || date.getDay() == 6)) {
+				element.classList.add('active_events')
+			}
+		})
 	}))
-	
+
+	// console.log(calendars)
+	// calendars.onDayRender(function(index, element, info) {
+	// 	// If weekend, make it red
+	// 	if (index == 0 || index == 6) {
+	// 		element.style.color = '#c32525';
+	// 	}
+	// });
 })
 
    // Get the element
@@ -148,45 +160,81 @@ $(document).ready(function() {
 
 	 function map() {
 
+		var Placemark = {};
 
-		ymaps.ready(function () {
+		ymaps.ready(function() {
+			// console.log('2');
 			var myMap = new ymaps.Map('map', {
-							center: [55.751574, 37.573856],
-							zoom: 11
+				center: [55.751574, 37.573856],
+				zoom: 11,
+				controls: ['zoomControl']
+			}, {
+				suppressMapOpenBlock: true,
+			});
+			// console.log('3');
+			MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+				'<div class="map_marker"  style="color: #2B2D41; font-weight: bold;" ><p>$[properties.iconContent]</p></div>'
+		),
+			myMap.behaviors.disable('scrollZoom');
+		
+			$('.finance_item').each(function() {
+				var obj = $(this).attr("data-coord");
+				var num = $(this).attr("data-number");
+				obj = JSON.parse(obj); //преобразовываем в объект
+				console.log(num)
+		
+				myMap.geoObjects
+					.add(new ymaps.Placemark(obj, { 
+            iconContent: num,
 					}, {
-							searchControlProvider: 'yandex#search'
-					}),
+            iconLayout: 'default#imageWithContent',
+						iconImageHref: '/i/global/map_11.svg',
+						// iconImageSize: [75, 98],
+						iconImageOffset: [-5, -38],
+						iconContentLayout: MyIconContentLayout
+					}));
+		
+			}); //each
 
-					MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-							'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-					),
+		});
+	// 	ymaps.ready(function () {
+	// 		var myMap = new ymaps.Map('map', {
+	// 						center: [55.751574, 37.573856],
+	// 						zoom: 11
+	// 				}, {
+	// 						searchControlProvider: 'yandex#search'
+	// 				}),
+
+	// 				MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+	// 						'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+	// 				),
 	
-					myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-							hintContent: 'Северная улица, 273',
-							balloonContent: 'Северная улица, 273'
-					}, {
-							iconLayout: 'default#image',
-							iconImageHref: '/i/global/map_1.svg',
-							iconImageSize: [75, 98],
-							iconImageOffset: [-5, -38],
-					}),
+	// 				myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+	// 						hintContent: 'Северная улица, 273',
+	// 						balloonContent: 'Северная улица, 273'
+	// 				}, {
+	// 						iconLayout: 'default#image',
+	// 						iconImageHref: '/i/global/map_1.svg',
+	// 						iconImageSize: [75, 98],
+	// 						iconImageOffset: [-5, -38],
+	// 				}),
 	
-					myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
-							hintContent: 'ул. Петровская, 53 Санкт-Петербург, Россия',
-							balloonContent: 'ул. Петровская, 53 Санкт-Петербург, Россия',
-					}, {
-							iconLayout: 'default#imageWithContent',
-							iconImageHref: '/i/global/map_2.svg',
-							iconImageSize: [75, 98],
-							iconImageOffset: [-5, -38],
-							iconContentOffset: [15, 15],
-							iconContentLayout: MyIconContentLayout
-					});
+	// 				myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
+	// 						hintContent: 'ул. Петровская, 53 Санкт-Петербург, Россия',
+	// 						balloonContent: 'ул. Петровская, 53 Санкт-Петербург, Россия',
+	// 				}, {
+	// 						iconLayout: 'default#imageWithContent',
+	// 						iconImageHref: '/i/global/map_2.svg',
+	// 						iconImageSize: [75, 98],
+	// 						iconImageOffset: [-5, -38],
+	// 						iconContentOffset: [15, 15],
+	// 						iconContentLayout: MyIconContentLayout
+	// 				});
 	
-			myMap.geoObjects
-					.add(myPlacemark)
-					.add(myPlacemarkWithContent);
-	});
+	// 		myMap.geoObjects
+	// 				.add(myPlacemark)
+	// 				.add(myPlacemarkWithContent);
+	// });
 }
 
 
@@ -385,6 +433,21 @@ $(document).ready(function() {
 	});
 })
 
+$(document).ready(function(){
+	// alert('Good morning')
+	// console.log('Good ')
+
+	const accBtn = document.querySelector('.header_account');
+
+	accBtn.addEventListener('click', function() {
+		let year = prompt('What year friends ?')
+
+		alert(year)
+	})
+
+	// console.log(accBtn)
+
+})
 
 
 

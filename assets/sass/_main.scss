@@ -66,3 +66,65 @@ button {
 	opacity: 1!important;
 	width: 100%;
 }
+
+.material_item--name {
+	max-width: 35rem!important;
+	margin-right: 2rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	// max-height: 4.6rem;
+}
+
+.material_item:hover {
+	.material_item--name {
+		max-width: 100%!important;
+		p {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 3;
+			max-height: 10.8rem!important;
+		}
+	}
+
+}
+
+.long_title {
+	max-width: 100%!important;
+}
+
+.map_marker {
+	position: relative;
+	p {
+		@include flex-center;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		font-size: 1.4rem;
+		font-family: $font_4;
+		position: absolute;
+		top: 3.9rem;
+	}
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		background-image: url('../i/global/map_1.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+		content: '';
+		width: 7.5rem;
+		height: 9.8rem;
+		transform: translateX(-50%);
+	}
+}
+
+
+.active_events {
+	background-color: #6987DF!important;
+}

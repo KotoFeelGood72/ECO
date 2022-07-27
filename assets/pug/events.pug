@@ -69,7 +69,8 @@ block content_block
 									.events_grid--itemsMain(style="	margin-bottom: 7.8rem;")
 										.events_griditems--content(style="margin-right: 7.7rem; max-width: 112.1rem;") 
 											p=item.title 
-											span=item.txt 
+											.news_desc_item
+												p=item.txt 
 											.events_gridItems--buttons 
 												a(href="#") Подробнее
 												a(href="#" class="events_big--btn") Принять участие в мероприятии
@@ -92,7 +93,8 @@ block content_block
 									.events_grid--itemsMain(style="margin-bottom: 4.1rem;")
 										.events_griditems--content 
 											p=item.title 
-											span=item.txt 
+											.news_desc_item
+												p=item.txt
 											.events_gridItems--buttons 
 												a(href="#") Подробнее
 												a(href="#" class="events_big--btn") Принять участие в мероприятии

@@ -96,12 +96,19 @@
 	ul {
 		li {
 			margin-bottom: 2.5rem;
+			&.active {
+				color: $green;
+			}
 			&:last-child {
 				margin-bottom: 0;
 			}
 		}
 		a {
 			font-size: 1.2rem;
+			transition: all .3s ease;
+			&:hover {
+				color: $green;
+			}
 		}
 		&:first-child {
 			margin-right: 6.2rem;
