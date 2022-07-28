@@ -188,7 +188,7 @@ $(document).ready(function() {
             iconContent: num,
 					}, {
             iconLayout: 'default#imageWithContent',
-						iconImageHref: '/i/global/map_11.svg',
+						iconImageHref: '',
 						// iconImageSize: [75, 98],
 						iconImageOffset: [-5, -38],
 						iconContentLayout: MyIconContentLayout
