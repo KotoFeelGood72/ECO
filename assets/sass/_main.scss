@@ -134,3 +134,34 @@ button {
 		object-fit: cover!important;
 	}
 }
+
+.single_events--txtWrapper {
+	a {
+		color: $green;
+		text-decoration: underline;
+		font-size: 1.4rem;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	ul {
+		margin: 1.5rem 0;
+		li {
+			margin-bottom: 0.8rem;
+			font-size: 1.4rem;
+			position: relative;
+			padding-left: 1.5rem;
+			&:before {
+				position: absolute;
+				top: .65rem;
+				left: 0;
+				width: .4rem;
+				height: .4rem;
+				background-color: $green;
+				content: '';
+				border-radius: 100%;
+			}
+		}
+	}
+}

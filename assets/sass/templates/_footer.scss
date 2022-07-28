@@ -286,6 +286,27 @@
 }
 .footer_main--bottom {
 	@include flex-space;
+
+	ul {
+		@include flex-start;
+		@include bp($point_2) {
+			flex-direction: column;
+			align-items: flex-start!important;
+		}
+		li {
+			margin-right: 2rem;
+			@include bp($point_2) {
+				margin-bottom: 1rem;
+				margin-right: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+				@include bp($point_2) {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
 	@include bp($point_2) {
 		order: 6;
 		flex-direction: column;
