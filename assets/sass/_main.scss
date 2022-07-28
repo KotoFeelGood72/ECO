@@ -128,3 +128,9 @@ button {
 .active_events {
 	background-color: #6987DF!important;
 }
+
+.jb_img {
+	img {
+		object-fit: cover!important;
+	}
+}
