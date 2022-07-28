@@ -31,14 +31,6 @@
 				line-height: 2.8rem;
 			}
 		}
-		.news_desc_item {
-			font-size: 1.4rem;
-			margin-bottom: 3rem;
-			p {
-				font-size: 1.4rem;
-				line-height: 2.4rem;
-			}
-		}
 	}
 	.events_gridItems--buttons {
 		height: 6.5rem;
@@ -69,43 +61,29 @@
 		}
 	}
 }
-.normal_main--w {
+.news_desc_item {
+	font-size: 1.4rem;
+	margin-bottom: 3rem;
+	p {
+		font-size: 1.4rem;
+		line-height: 2.4rem;
+	}
 }
-.normal_main--head {
+
+.events_grid--itemBottom {
+	.events_gridItems--info {
+		margin-bottom: 0;
+	}
 }
-.normal_head--filter {
+
+.single_events--txtWrapper {
+	p {
+		margin-bottom: 1rem;
+	}
 }
-.normal_filter--inputTxt {
-}
-.normal_filter--select {
-}
-.mod_select {
-}
-.filter_icon {
-}
-.events_mainGrid--w {
-}
-.news_mainGrid--w {
-}
-.events_mainGrid {
-}
-.news_mainGrid {
-}
-.events_grid--itemsWrapper {
-}
-.news_time--publish {
-}
-.events_grid--itemsMain {
-}
-.events_griditems--content {
-}
-.events_gridItems--buttons {
-}
-.events_griditems--img {
-}
-.normal_main--bottom {
-}
-.normal_btn--more {
-}
-.normal_list-var {
+
+.singleFinance_content {
+	.single_events--txtWrapper {
+		margin-bottom: 4.7rem;
+	}
 }
