@@ -71,6 +71,12 @@
 				font-size: 1.2rem;
 				@include flex-start;
 			}
+
+			&.active {
+				a {
+					color: $vio;
+				}
+			}
 		}
 	}
 }

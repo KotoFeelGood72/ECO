@@ -97,7 +97,9 @@
 		li {
 			margin-bottom: 2.5rem;
 			&.active {
-				color: $green;
+				a {
+					color: $green!important;
+				}
 			}
 			&:last-child {
 				margin-bottom: 0;
@@ -187,6 +189,7 @@
 			align-items: flex-end;
 		}
 		li {
+			
 			@include bp($point_2) {
 				margin-bottom: 0.9rem;
 			}
@@ -333,4 +336,8 @@
 			text-decoration: none;
 		}
 	}
+}
+
+.footer_numbersMails li:last-child a {
+	color: $green;
 }

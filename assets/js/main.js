@@ -429,9 +429,19 @@ function maps() {
 // });
 
 $(document).ready(function() {
-	$("form").validate({
-	});
+	validate();
+	// if($('.register_form--item').hasClass('active_tab')) {
+	// 	validate();
+	// }
 })
+
+function validate() {
+	// $("form").validate({
+	// });
+	$('#form1').validate({});
+	$('#form2').validate({});
+	$('#form3').validate({});
+}
 
 $(document).ready(function(){
 	// alert('Good morning')
