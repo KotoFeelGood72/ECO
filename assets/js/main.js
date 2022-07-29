@@ -447,13 +447,7 @@ $(document).ready(function(){
 	// alert('Good morning')
 	// console.log('Good ')
 
-	const accBtn = document.querySelector('.header_account');
-
-	accBtn.addEventListener('click', function() {
-		let year = prompt('What year friends ?')
-
-		alert(year)
-	})
+	
 
 	// console.log(accBtn)
 

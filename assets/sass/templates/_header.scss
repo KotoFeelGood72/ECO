@@ -181,7 +181,7 @@
 	@include bp($point_2) {
 		display: none;
 	}
-	button {
+	a {
 		@include flex-start;
 		color: $white;
 		padding: .8rem 1.7rem;

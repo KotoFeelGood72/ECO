@@ -240,7 +240,7 @@
 				
 			}
 		}
-		p {
+		a {
 			font-size: 1.4rem;
 			margin-bottom: 3.5rem;
 			line-height: 2.3rem;
@@ -270,6 +270,7 @@
 	}
 }
 .hero_newsItem {
+	
 }
 .home_static {
 	position: relative;
@@ -1274,6 +1275,8 @@
 }
 .faq_main--w {
 	margin-bottom: 22rem;
+	position: relative;
+	z-index: 2;
 	@include bp($point_2) {
 		padding-bottom: 5.3rem;
 		position: relative;
